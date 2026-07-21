@@ -62,7 +62,7 @@
   var pageId = document.body.getAttribute("data-page") || "home";
   var activeNav = document.body.getAttribute("data-nav") || pageId;
   var brandName = '<span class="brand-name">DAMA<span> Granadas</span><small>Mediterranean Excellence</small></span>';
-  var LOGOIMG = '<img class="brand-logo" src="' + assets + 'img/logo-grupo.svg" alt="Grupo Dama de Elche" width="200" height="52">';
+  var LOGOIMG = '<img class="brand-logo" src="' + assets + 'img/logo-grupo.png" alt="Grupo Dama de Elche" width="700" height="214">';
 
   // ---- Selector de idioma (apunta a la página equivalente en el otro idioma) ----
   var otherFile = PAGES[pageId] ? PAGES[pageId][isEN ? "es" : "en"] : "index.html";

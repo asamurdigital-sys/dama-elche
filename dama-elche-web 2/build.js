@@ -19,7 +19,7 @@ const IMG = {
   news2: A+"img/news2.webp",
   news3: A+"img/news3.png"
 };
-const LOGO = { granadas:A+"img/logo-granadas.svg", pimientos:A+"img/logo-pimientos.svg", coliflor:A+"img/logo-coliflor.svg", higos:A+"img/logo-higos.svg" };
+const LOGO = { granadas:A+"img/logo-granadas.png", pimientos:A+"img/logo-pimientos.png", coliflor:A+"img/logo-coliflor.png", higos:A+"img/logo-higos.png" };
 const SITE = "https://pomegranatespain.com";
 
 /* slugs por idioma (para hreflang y rutas) */
@@ -351,7 +351,6 @@ function homePage(lang){
   const main = `
 <section class="hero"><div class="hero-bg" style="background-image:url('${IMG.hero}')"></div>
   <div class="container">
-    <span class="eyebrow">${t("Campaña 2026 · Elche, Mediterráneo","2026 Season · Elche, Mediterranean",lang)}</span>
     <h1>${t("La fruta que exige <em>excelencia</em>. Y la cumple.","The fruit that demands <em>excellence</em>. And delivers.",lang)}</h1>
     <p class="lead">${t("Granadas, pimientos, higos y coliflores seleccionados uno a uno desde Elche. Para tiendas, chefs y distribuidores que buscan lo memorable.","Pomegranates, peppers, figs and cauliflower selected one by one from Elche. For retailers, chefs and distributors who look for the memorable.",lang)}</p>
     <div class="btn-row"><a href="${SLUG.fruits[lang]}" class="btn btn-light">${heroBtn1} <span class="arrow">&rarr;</span></a><a href="${SLUG.contact[lang]}" class="btn btn-ghost-light">${heroBtn2}</a></div>
