@@ -98,4 +98,12 @@
       });
     });
   });
+
+  /* ---- Fade-in poshy de imágenes de contenido (con red de seguridad) ---- */
+  document.querySelectorAll(".split-media img, .cert-chip img, .article-body img").forEach(function (im) {
+    im.classList.add("img-fade");
+    var done = function () { im.classList.add("is-in"); };
+    if (im.complete && im.naturalWidth) { done(); }
+    else { im.addEventListener("load", done); im.addEventListener("error", done); }
+  });
 })();
