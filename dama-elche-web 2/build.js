@@ -42,6 +42,78 @@ const SLUG = {
   legal:{es:"aviso-legal.html",en:"legal-notice.html"}
 };
 
+/* ---------- Posts del blog ---------- */
+const POSTS = [
+  {
+    key:"post1", img:IMG.news1,
+    slug:{es:"noticia-beneficios-granada-mollar.html", en:"mollar-pomegranate-health-benefits.html"},
+    date:{es:"25 Abr 2025", en:"25 Apr 2025"},
+    title:{es:"Los beneficios para la salud de las granadas Mollar de Elche", en:"The health benefits of Mollar pomegranates from Elche"},
+    excerpt:{es:"Antioxidantes, vitaminas y sabor: por qué la Mollar es una de las granadas más valoradas.", en:"Antioxidants, vitamins and flavour: why the Mollar is one of the most prized pomegranates."},
+    body:{
+      es:`<p>La <strong>Granada Mollar de Elche</strong> no es solo una de las frutas más emblemáticas del sureste español: es también una de las más completas desde el punto de vista nutricional. Cultivada en el entorno mediterráneo de Elche, destaca por sus arilos jugosos, su dulzor equilibrado y sus semillas tiernas y comestibles.</p>
+<h3>Un concentrado de antioxidantes</h3>
+<p>La granada es especialmente rica en <strong>polifenoles y punicalaginas</strong>, compuestos antioxidantes que ayudan a combatir el estrés oxidativo. A ello se suma un aporte notable de <strong>vitamina C</strong>, potasio y fibra, lo que la convierte en un aliado natural para el sistema inmunitario y la salud cardiovascular.</p>
+<h3>Por qué la Mollar es diferente</h3>
+<p>Frente a otras variedades, la Mollar de Elche se caracteriza por su <em>semilla blanda</em>, un sabor dulce con acidez muy suave y un color intenso. Esta combinación la ha convertido en la variedad preferida para consumo en fresco y en un referente de calidad reconocido con Denominación de Origen Protegida.</p>
+<ul><li>Alto contenido en antioxidantes naturales.</li><li>Fuente de vitamina C y potasio.</li><li>Semillas comestibles y textura tierna.</li><li>Ideal en fresco, zumos, ensaladas y repostería.</li></ul>
+<p>En Grupo Dama de Elche seleccionamos cada granada una a una para que llegue a tiendas, chefs y distribuidores en su punto óptimo de maduración, sabor y presentación.</p>`,
+      en:`<p>The <strong>Mollar pomegranate from Elche</strong> is not only one of the most iconic fruits of south-eastern Spain: it is also one of the most nutritionally complete. Grown in the Mediterranean setting of Elche, it stands out for its juicy arils, balanced sweetness and tender, edible seeds.</p>
+<h3>An antioxidant powerhouse</h3>
+<p>Pomegranate is especially rich in <strong>polyphenols and punicalagins</strong>, antioxidant compounds that help fight oxidative stress. Add to that a notable contribution of <strong>vitamin C</strong>, potassium and fibre, and it becomes a natural ally for the immune system and cardiovascular health.</p>
+<h3>Why the Mollar is different</h3>
+<p>Compared with other varieties, the Mollar de Elche is defined by its <em>soft seed</em>, a sweet flavour with very mild acidity and an intense colour. This combination has made it the preferred variety for fresh consumption and a quality benchmark recognised with a Protected Designation of Origin.</p>
+<ul><li>High in natural antioxidants.</li><li>A source of vitamin C and potassium.</li><li>Edible seeds and tender texture.</li><li>Ideal fresh, in juices, salads and desserts.</li></ul>
+<p>At Grupo Dama de Elche we select each pomegranate one by one so it reaches retailers, chefs and distributors at its optimum point of ripeness, flavour and presentation.</p>`
+    }
+  },
+  {
+    key:"post2", img:IMG.news2,
+    slug:{es:"noticia-mercados-asia.html", en:"expanding-markets-asia.html"},
+    date:{es:"25 Abr 2025", en:"25 Apr 2025"},
+    title:{es:"Frutas Dama de Elche expande sus mercados en Asia", en:"Frutas Dama de Elche expands into Asian markets"},
+    excerpt:{es:"Nuevos acuerdos de distribución acercan nuestra fruta a mercados estratégicos.", en:"New distribution deals bring our fruit to strategic markets."},
+    body:{
+      es:`<p>El compromiso de <strong>Frutas Dama de Elche</strong> con la calidad y la trazabilidad abre nuevas puertas. En las últimas campañas hemos reforzado nuestra presencia internacional con nuevos acuerdos de distribución que acercan nuestra fruta a <strong>mercados estratégicos de Asia</strong>.</p>
+<h3>Calidad que viaja lejos</h3>
+<p>Exportar fruta fresca a miles de kilómetros exige control en cada eslabón. Nuestra <em>cadena de frío</em>, los protocolos de selección y un packaging pensado para el transporte de larga distancia permiten que la granada, el pimiento y el resto de nuestras categorías lleguen impecables a destino.</p>
+<h3>Certificaciones que abren mercados</h3>
+<p>Contar con estándares internacionales como <strong>GlobalG.A.P., IFS y BRCGS</strong> no es solo una garantía para el consumidor: es la llave que nos permite operar con la distribución más exigente de cada país.</p>
+<p>Seguimos creciendo de forma sostenible, de la mano de nuestros agricultores y con la vista puesta en llevar el sabor del Mediterráneo a cada vez más rincones del mundo.</p>`,
+      en:`<p><strong>Frutas Dama de Elche</strong>'s commitment to quality and traceability is opening new doors. Over recent seasons we have strengthened our international presence with new distribution agreements that bring our fruit to <strong>strategic markets across Asia</strong>.</p>
+<h3>Quality that travels far</h3>
+<p>Exporting fresh fruit thousands of kilometres demands control at every link. Our <em>cold chain</em>, selection protocols and packaging designed for long-distance transport ensure that pomegranates, peppers and the rest of our categories arrive flawless at their destination.</p>
+<h3>Certifications that open markets</h3>
+<p>Holding international standards such as <strong>GlobalG.A.P., IFS and BRCGS</strong> is not just a guarantee for the consumer: it is the key that lets us work with the most demanding retail in each country.</p>
+<p>We keep growing sustainably, hand in hand with our growers and focused on bringing the flavour of the Mediterranean to ever more corners of the world.</p>`
+    }
+  },
+  {
+    key:"post3", img:IMG.news3,
+    slug:{es:"noticia-temporada-granadas.html", en:"pomegranate-season.html"},
+    date:{es:"23 Abr 2025", en:"23 Apr 2025"},
+    title:{es:"Temporada de granadas: qué esperar este año", en:"Pomegranate season: what to expect this year"},
+    excerpt:{es:"Calendario de campaña, variedades y previsiones de calibre y calidad.", en:"Season calendar, varieties and calibre and quality forecasts."},
+    body:{
+      es:`<p>Cada campaña de granada es distinta, pero la ilusión es siempre la misma: llevar al mercado una fruta en su punto perfecto. Te contamos <strong>qué esperar de la temporada</strong> y cómo planificar tus pedidos.</p>
+<h3>Calendario de campaña</h3>
+<p>La recolección de la <strong>Granada Mollar de Elche</strong> arranca a comienzos de otoño y se extiende hasta bien entrado el invierno. Antes llegan variedades más tempranas como la <em>Acco</em>, mientras que la <em>Wonderful</em> aporta color e intensidad en la parte central de la campaña.</p>
+<h3>Variedades y calibres</h3>
+<ul><li><strong>Mollar de Elche</strong>: dulce, semilla tierna, ideal para consumo en fresco.</li><li><strong>Wonderful</strong>: color intenso y sabor con carácter.</li><li><strong>Acco</strong>: variedad temprana, arranca la temporada.</li></ul>
+<p>Las previsiones de calibre y calidad dependen de la climatología del año, por eso trabajamos con seguimiento en campo para ajustar volúmenes y disponibilidad.</p>
+<p>¿Preparas tu surtido para la temporada? Contáctanos y te avanzamos calendario, calibres y disponibilidad para que planifiques con antelación.</p>`,
+      en:`<p>Every pomegranate season is different, but the excitement is always the same: bringing to market a fruit at its perfect point. Here is <strong>what to expect from the season</strong> and how to plan your orders.</p>
+<h3>Season calendar</h3>
+<p>The harvest of the <strong>Mollar pomegranate from Elche</strong> begins in early autumn and runs well into winter. Earlier varieties such as the <em>Acco</em> arrive first, while the <em>Wonderful</em> brings colour and intensity to the middle of the campaign.</p>
+<h3>Varieties and sizes</h3>
+<ul><li><strong>Mollar de Elche</strong>: sweet, tender seed, ideal for fresh consumption.</li><li><strong>Wonderful</strong>: intense colour and flavour with character.</li><li><strong>Acco</strong>: early variety, opens the season.</li></ul>
+<p>Calibre and quality forecasts depend on the year's weather, which is why we monitor the fields closely to fine-tune volumes and availability.</p>
+<p>Planning your assortment for the season? Get in touch and we'll share the calendar, sizes and availability so you can plan ahead.</p>`
+    }
+  }
+];
+POSTS.forEach(p=>{ SLUG[p.key] = { es:p.slug.es, en:p.slug.en }; });
+
 /* ---------- Shell de página ---------- */
 function shell(o){
   const isEN = o.lang === "en";
@@ -193,11 +265,80 @@ const PRODUCTS = {
         pills:['Cuello de Dama','Colar','Breva','San Antonio'], ctaH2:'Need figs or brevas for your <em>channel</em>?'} }
 };
 
+/* ---- Bloque interactivo por producto (Características / Nutrición / Cultivo) ---- */
+const DETAIL = {
+  granadas:{
+    es:{
+      car:`<h3>Características distintivas</h3><ul><li>Variedades disponibles: Mollar, Wonderful, Acco, Smith, Emek y Bigful.</li><li>Diferentes perfiles de sabor y textura según destino: desde dulces y suaves hasta ácidas y consistentes.</li><li>Presentación visual atractiva: piel rojiza uniforme, arilos brillantes y calibres seleccionados.</li><li>Recolección manual en su punto óptimo, ideal para exportación y conservación en cadena de frío.</li><li>Producción bajo estándares de trazabilidad, certificación de origen y prácticas sostenibles.</li></ul><h3>Disponibilidad estacional</h3><p>La campaña en Elche comienza a finales de agosto con variedades tempranas como Acco o Emek, y se extiende hasta enero con variedades de media y larga conservación como Wonderful o Bigful. La Mollar de Elche, variedad local por excelencia, se recolecta entre finales de septiembre y principios de noviembre. Esta planificación escalonada permite abastecer al canal profesional durante varios meses.</p>`,
+      nut:`<h3>Composición nutricional (100 g de arilos aprox.)</h3><ul><li>Alta densidad antioxidante: punicalaginas, antocianinas y ácido elágico.</li><li>Vitamina C: 10–15 mg (12–19 % de la CDR).</li><li>Potasio: aprox. 240 mg.</li><li>Fibra alimentaria: 2,2 g.</li><li>Bajo valor calórico: 65–75 kcal.</li><li>Sin grasas saturadas ni colesterol.</li></ul><h3>Impacto en la salud</h3><ul><li>Efecto antiinflamatorio y reducción del estrés oxidativo.</li><li>Apoyo cardiovascular: presión arterial y perfil lipídico.</li><li>Salud digestiva: fibra y equilibrio de la microbiota.</li></ul><p class="note">Los efectos pueden variar según el metabolismo y el patrón de consumo. Esta información no sustituye asesoramiento médico.</p>`,
+      cul:`<h3>Condiciones de crecimiento</h3><ul><li>Clima mediterráneo semiárido, con alta radiación solar y fotoperiodo largo.</li><li>Suelo franco-arenoso o ligeramente alcalino, bien drenado.</li><li>Riego localizado de precisión (goteo) para un control hídrico equilibrado.</li><li>Maduración progresiva gracias a inviernos suaves y veranos calurosos.</li></ul><h3>Prácticas sostenibles</h3><ul><li>Riego por goteo con programación climática.</li><li>Manejo Integrado de Plagas (MIP) y control biológico.</li><li>Aporte de materia orgánica y cubierta vegetal parcial.</li><li>Zonas de biodiversidad funcional que favorecen la polinización.</li></ul>`
+    },
+    en:{
+      car:`<h3>Distinctive features</h3><ul><li>Available varieties: Mollar, Wonderful, Acco, Smith, Emek and Bigful.</li><li>Different flavour and texture profiles by destination: from sweet and soft to tart and firm.</li><li>Attractive appearance: uniform reddish skin, glossy arils and selected calibres.</li><li>Hand-harvested at the optimal point, ideal for export and cold-chain storage.</li><li>Produced under traceability standards, origin certification and sustainable practices.</li></ul><h3>Seasonal availability</h3><p>The Elche season starts in late August with early varieties such as Acco or Emek, and runs to January with medium and long-keeping varieties like Wonderful or Bigful. The Mollar de Elche, the flagship local variety, is harvested between late September and early November. This staggered planning supplies the professional channel for several months.</p>`,
+      nut:`<h3>Nutritional profile (per 100 g of arils, approx.)</h3><ul><li>High antioxidant density: punicalagins, anthocyanins and ellagic acid.</li><li>Vitamin C: 10–15 mg (12–19% of the RDA).</li><li>Potassium: approx. 240 mg.</li><li>Dietary fibre: 2.2 g.</li><li>Low calories: 65–75 kcal.</li><li>No saturated fat or cholesterol.</li></ul><h3>Health impact</h3><ul><li>Anti-inflammatory effect and reduced oxidative stress.</li><li>Cardiovascular support: blood pressure and lipid profile.</li><li>Digestive health: fibre and microbiota balance.</li></ul><p class="note">Effects may vary with individual metabolism and consumption patterns. This information does not replace medical advice.</p>`,
+      cul:`<h3>Growing conditions</h3><ul><li>Semi-arid Mediterranean climate, with high solar radiation and long photoperiod.</li><li>Sandy-loam or slightly alkaline, well-drained soil.</li><li>Precision drip irrigation for balanced water control.</li><li>Progressive ripening thanks to mild winters and hot summers.</li></ul><h3>Sustainable practices</h3><ul><li>Drip irrigation with climate-based scheduling.</li><li>Integrated Pest Management (IPM) and biological control.</li><li>Organic matter and partial ground cover.</li><li>Functional biodiversity areas that support pollination.</li></ul>`
+    }
+  },
+  pimientos:{
+    es:{
+      car:`<h3>Características distintivas</h3><ul><li>Variedades California y Lamuyo en rojo, amarillo, naranja y verde, con calibres para retail y HORECA.</li><li>Pulpa firme, piel brillante y excelente presentación comercial que reduce mermas.</li><li>Sabor equilibrado, textura crujiente y alto rendimiento poscosecha.</li><li>Conservación prolongada en cámara sin pérdida de firmeza.</li><li>Clasificación según estándares europeos de calidad "Extra" o "I".</li></ul><h3>Disponibilidad estacional</h3><p>La campaña principal se desarrolla entre mayo y octubre en cultivos protegidos y al aire libre del sureste español. En invierno mantenemos el suministro con producción en invernadero, garantizando disponibilidad casi todo el año para retail, HORECA y IV gama.</p>`,
+      nut:`<h3>Composición nutricional (100 g aprox.)</h3><ul><li>Energía: 25–30 kcal · Agua: 92 g.</li><li>Fibra dietética: 2,1 g.</li><li>Vitamina C: 80–130 mg (100–160 % VRN).</li><li>Provitamina A (β-caroteno): 370 µg (46 % VRN).</li><li>Potasio: 210 mg.</li></ul><h3>Beneficios para la salud</h3><ul><li>Aporte antioxidante natural (vitamina C y carotenoides).</li><li>Bajo en calorías y libre de grasas.</li><li>Rico en fibra soluble: saciedad y salud digestiva.</li></ul><p class="note">Los beneficios se basan en un consumo habitual dentro de una dieta equilibrada. No sustituye consejo médico.</p>`,
+      cul:`<h3>Condiciones de crecimiento</h3><ul><li>Clima templado y estable, óptimo entre 18–30 °C.</li><li>Suelos franco-arenosos, con pH ligeramente ácido y buena aireación.</li><li>Riego por goteo con sensores de humedad para evitar el estrés hídrico.</li><li>Fertirrigación ajustada al estado fenológico y análisis foliar.</li></ul><h3>Prácticas sostenibles</h3><ul><li>Manejo Integrado de Plagas (MIP) con fauna auxiliar y trampas cromáticas.</li><li>Bioestimulantes naturales (extractos de algas).</li><li>Cobertura vegetal entre líneas para reducir la erosión.</li><li>Certificación GlobalG.A.P. y GRASP.</li></ul>`
+    },
+    en:{
+      car:`<h3>Distinctive features</h3><ul><li>California and Lamuyo varieties in red, yellow, orange and green, with calibres for retail and HORECA.</li><li>Firm flesh, glossy skin and excellent commercial presentation that reduces waste.</li><li>Balanced flavour, crunchy texture and high post-harvest performance.</li><li>Extended cold-store life with no loss of firmness.</li><li>Graded to European "Extra" or "I" quality standards.</li></ul><h3>Seasonal availability</h3><p>The main season runs from May to October across protected and open-air crops in south-east Spain. In winter we keep supply going with greenhouse production, ensuring availability nearly all year for retail, HORECA and fresh-cut.</p>`,
+      nut:`<h3>Nutritional profile (per 100 g, approx.)</h3><ul><li>Energy: 25–30 kcal · Water: 92 g.</li><li>Dietary fibre: 2.1 g.</li><li>Vitamin C: 80–130 mg (100–160% NRV).</li><li>Provitamin A (β-carotene): 370 µg (46% NRV).</li><li>Potassium: 210 mg.</li></ul><h3>Health benefits</h3><ul><li>Natural antioxidant intake (vitamin C and carotenoids).</li><li>Low in calories and fat-free.</li><li>Rich in soluble fibre: satiety and digestive health.</li></ul><p class="note">Benefits are based on regular consumption within a balanced diet. Not a substitute for medical advice.</p>`,
+      cul:`<h3>Growing conditions</h3><ul><li>Mild, stable climate, optimal between 18–30 °C.</li><li>Well-structured sandy-loam soils, slightly acidic pH and good aeration.</li><li>Drip irrigation with moisture sensors to avoid water stress.</li><li>Fertigation tuned to the crop stage and leaf analysis.</li></ul><h3>Sustainable practices</h3><ul><li>Integrated Pest Management (IPM) with beneficial fauna and sticky traps.</li><li>Natural biostimulants (seaweed extracts).</li><li>Ground cover between rows to reduce erosion.</li><li>GlobalG.A.P. and GRASP certification.</li></ul>`
+    }
+  },
+  coliflor:{
+    es:{
+      car:`<h3>Características distintivas</h3><ul><li>Variedades premium: Casper, Campohana, Naruto y Brigant, adaptadas a distintos ciclos.</li><li>Cabeza compacta, estructura densa y alto rendimiento en corte.</li><li>Blancura uniforme y presentación comercial excelente.</li><li>Buena conservación poscosecha sin pérdida de firmeza ni color.</li><li>Recolección manual selectiva y calibre homogéneo. Apta para fresco, IV gama e industria.</li></ul><h3>Disponibilidad estacional</h3><p>La campaña en el sureste español se desarrolla principalmente de noviembre a abril, según variedad. La planificación escalonada y la adaptación varietal permiten un suministro continuo durante los meses de mayor demanda nacional e internacional.</p>`,
+      nut:`<h3>Beneficios nutricionales (100 g aprox.)</h3><ul><li>Rica en fibra dietética: digestión y saciedad.</li><li>Vitamina C, folatos y minerales como potasio y hierro.</li><li>Baja en grasa y sin colesterol.</li><li>Elevado contenido en antioxidantes naturales (flavonoides y taninos).</li></ul><h3>Beneficios para la salud</h3><ul><li>Favorece la salud intestinal gracias a su fibra.</li><li>Ideal en dietas vegetales y equilibradas.</li><li>Contribuye al sistema nervioso y muscular (folato y potasio).</li></ul><p class="note">Los beneficios se asocian al consumo regular dentro de una dieta variada.</p>`,
+      cul:`<h3>Condiciones de crecimiento</h3><ul><li>Clima templado y suave en invierno, entre 10 y 25 °C.</li><li>Suelo bien drenado, profundo y rico en materia orgánica.</li><li>Ciclo de cultivo medio de 90 a 120 días desde siembra.</li><li>Sensible al exceso de humedad en floración y a heladas fuertes.</li></ul><h3>Prácticas sostenibles</h3><ul><li>Cultivo en rotación para mejorar la salud del suelo.</li><li>Fertilización natural y manejo de plagas de bajo impacto.</li><li>Promoción de la biodiversidad con márgenes vegetales y control biológico.</li></ul>`
+    },
+    en:{
+      car:`<h3>Distinctive features</h3><ul><li>Premium varieties: Casper, Campohana, Naruto and Brigant, suited to different cycles.</li><li>Compact head, dense structure and high cutting yield.</li><li>Uniform whiteness and excellent commercial presentation.</li><li>Good post-harvest keeping with no loss of firmness or colour.</li><li>Selective hand harvest and homogeneous calibre. Suited to fresh, fresh-cut and industry.</li></ul><h3>Seasonal availability</h3><p>The south-east Spain season runs mainly from November to April, depending on variety. Staggered planning and varietal adaptation allow continuous supply through the months of highest national and international demand.</p>`,
+      nut:`<h3>Nutritional benefits (per 100 g, approx.)</h3><ul><li>Rich in dietary fibre: digestion and satiety.</li><li>Vitamin C, folates and minerals such as potassium and iron.</li><li>Low in fat and cholesterol-free.</li><li>High in natural antioxidants (flavonoids and tannins).</li></ul><h3>Health benefits</h3><ul><li>Supports gut health thanks to its fibre.</li><li>Ideal in plant-based, balanced diets.</li><li>Supports the nervous and muscular systems (folate and potassium).</li></ul><p class="note">Benefits are associated with regular consumption within a varied diet.</p>`,
+      cul:`<h3>Growing conditions</h3><ul><li>Mild, temperate winter climate, between 10 and 25 °C.</li><li>Well-drained, deep soil rich in organic matter.</li><li>Average crop cycle of 90 to 120 days from sowing.</li><li>Sensitive to excess humidity at flowering and to hard frosts.</li></ul><h3>Sustainable practices</h3><ul><li>Crop rotation to improve soil health.</li><li>Natural fertilisation and low-impact pest management.</li><li>Biodiversity promotion with vegetated margins and biological control.</li></ul>`
+    }
+  },
+  higos:{
+    es:{
+      car:`<h3>Características distintivas</h3><ul><li>Variedades: Colar, Blanca, Cuello de Dama y San Antonio, entre otras.</li><li>Sabor intenso y natural, con textura jugosa y alto contenido en azúcares naturales.</li><li>Coloración atractiva y presentación premium para gourmet y retail exigente.</li><li>Recolección manual diaria en su punto justo, perfecta para fresco y exportación.</li><li>Cultivo bajo trazabilidad, certificación GlobalG.A.P. y prácticas respetuosas.</li></ul><h3>Disponibilidad estacional</h3><p>La campaña de brevas arranca a finales de mayo y junio con variedades tempranas. Desde finales de julio y durante agosto y septiembre comienza la recolección escalonada de higos (Colar o Blanca). El clima mediterráneo garantiza una ventana comercial amplia para mercado nacional y exportación.</p>`,
+      nut:`<h3>Composición nutricional (100 g aprox.)</h3><ul><li>Alto contenido en azúcares naturales (glucosa y fructosa).</li><li>Fibra: 2,5–3 g · Potasio: ~230 mg · Calcio vegetal: ~35 mg.</li><li>Antioxidantes naturales: antocianinas, flavonoides y fenoles.</li><li>~70 kcal, sin colesterol ni grasas saturadas.</li></ul><h3>Impacto en la salud</h3><ul><li>Mejoran la digestión por su fibra soluble e insoluble.</li><li>Efecto saciante natural, útil en control de peso.</li><li>Potencial antioxidante y apoyo cardiovascular.</li></ul><p class="note">Los efectos pueden variar según el metabolismo y los hábitos. No sustituye el consejo médico.</p>`,
+      cul:`<h3>Condiciones de crecimiento</h3><ul><li>Zonas del sur de Alicante: Elche, Albatera y Crevillente.</li><li>Clima cálido y seco, ideal para una maduración lenta y rica en azúcares.</li><li>Suelos franco-arenosos y bien aireados, con buen drenaje.</li><li>Riego localizado por goteo y recolección escalonada de maduración estival.</li></ul><h3>Prácticas sostenibles</h3><ul><li>Riego eficiente con sensores climáticos.</li><li>Control biológico de plagas (MIP), priorizando la biodiversidad útil.</li><li>Materia orgánica y cubiertas vegetales para la salud del suelo.</li><li>Zonas de biodiversidad funcional para la polinización.</li></ul>`
+    },
+    en:{
+      car:`<h3>Distinctive features</h3><ul><li>Varieties: Colar, Blanca, Cuello de Dama and San Antonio, among others.</li><li>Intense, natural flavour, with juicy texture and high natural sugar content.</li><li>Attractive colour and premium presentation for gourmet and demanding retail.</li><li>Daily hand harvest at the right ripeness, perfect for fresh and export.</li><li>Grown under traceability, GlobalG.A.P. certification and respectful practices.</li></ul><h3>Seasonal availability</h3><p>The breva season starts in late May and June with early varieties. From late July and through August and September the staggered fig harvest begins (Colar or Blanca). The Mediterranean climate ensures a wide commercial window for the domestic market and export.</p>`,
+      nut:`<h3>Nutritional profile (per 100 g, approx.)</h3><ul><li>High in natural sugars (glucose and fructose).</li><li>Fibre: 2.5–3 g · Potassium: ~230 mg · Plant calcium: ~35 mg.</li><li>Natural antioxidants: anthocyanins, flavonoids and phenolics.</li><li>~70 kcal, no cholesterol or saturated fat.</li></ul><h3>Health impact</h3><ul><li>Improve digestion thanks to soluble and insoluble fibre.</li><li>Natural satiating effect, useful for weight control.</li><li>Antioxidant potential and cardiovascular support.</li></ul><p class="note">Effects may vary with metabolism and habits. Not a substitute for medical advice.</p>`,
+      cul:`<h3>Growing conditions</h3><ul><li>Southern Alicante areas: Elche, Albatera and Crevillente.</li><li>Warm, dry climate, ideal for slow, sugar-rich ripening.</li><li>Well-aerated sandy-loam soils with good drainage.</li><li>Localised drip irrigation and staggered summer harvest.</li></ul><h3>Sustainable practices</h3><ul><li>Efficient irrigation with climate sensors.</li><li>Biological pest control (IPM), prioritising beneficial biodiversity.</li><li>Organic matter and ground covers for soil health.</li><li>Functional biodiversity areas for pollination.</li></ul>`
+    }
+  }
+};
+function productDetail(key, lang){
+  const d = DETAIL[key][lang];
+  const L = lang==="en" ? ["Features","Nutrition","Growing"] : ["Características","Nutrición","Cultivo"];
+  return `<section class="section bg-cream-soft"><div class="container"><div class="tabs reveal" data-tabs>
+    <div class="tab-nav" role="tablist">
+      <button class="tab-btn is-active" data-tab="0">${L[0]}</button>
+      <button class="tab-btn" data-tab="1">${L[1]}</button>
+      <button class="tab-btn" data-tab="2">${L[2]}</button>
+    </div>
+    <div class="tab-body">
+      <div class="tab-panel is-active" data-panel="0">${d.car}</div>
+      <div class="tab-panel" data-panel="1">${d.nut}</div>
+      <div class="tab-panel" data-panel="2">${d.cul}</div>
+    </div>
+  </div></div></section>`;
+}
+
 function productPage(key, lang){
   const p = PRODUCTS[key], d = p[lang];
   const alt = key;
   const main = pageHero(p.img, d.crumb, d.h1, d.lead, LOGO[key])
     + splitSection(p.img, alt, t("El producto","The product",lang), d.introH2, d.introLead, d.feats)
+    + productDetail(key, lang)
     + pillsSection(t("Variedades","Varieties",lang), d.varH2, d.varLead, d.pills)
     + ctaBlock(lang, d.ctaH2);
   return { id:key, nav:"fruits", bodyClass:"header-solid", lang, main,
@@ -215,8 +356,15 @@ function fruitsPage(lang){
   ].map(c=>`<a href="${SLUG[c[0]][lang]}" class="pcard reveal"><div class="pcard-img" style="background-image:url('${c[1]}')"></div><span class="tag">${c[2]}</span><div class="pcard-body"><h3>${c[3]}</h3><p>${c[4]}</p><span class="more">${t("Ver más","See more",lang)} <span class="arrow">&rarr;</span></span></div></a>`).join("");
   const h1=t('Frutas y verduras <em>del Mediterráneo</em>','Fruit &amp; vegetables <em>from the Mediterranean</em>',lang);
   const lead=t('Nuestra gama completa, seleccionada uno a uno para el canal profesional: granadas, pimientos, coliflor e higos y brevas.','Our full range, selected one by one for the professional channel: pomegranates, peppers, cauliflower and figs & brevas.',lang);
+  const intro = `<section class="section bg-cream"><div class="container center"><div class="sec-head center reveal"><span class="eyebrow">${t("Nuestra gama","Our range",lang)}</span><h2 class="h-sec">${t("Selección con <em>alma mediterránea</em>","A selection with <em>Mediterranean soul</em>",lang)}</h2><p class="lead">${t("En Frutas Dama de Elche cultivamos y exportamos frutas y verduras frescas con el compromiso de ofrecer siempre productos de máxima calidad. Cada variedad cumple los más altos estándares de sabor, frescura y valor nutricional, gracias a una producción sostenible y orientada al detalle.","At Frutas Dama de Elche we grow and export fresh fruit and vegetables committed to always delivering top quality. Every variety meets the highest standards of flavour, freshness and nutritional value, thanks to sustainable, detail-driven production.",lang)}</p></div></div></section>`;
+  const cardsSec = `<section class="section bg-cream-soft"><div class="container"><div class="grid-cards">${cards}</div></div></section>`;
+  const trust = `<section class="section bg-cream"><div class="container"><div class="split">
+    <div class="split-media reveal"><img src="${IMG.coliflor}" alt="" loading="lazy"></div>
+    <div class="reveal d1"><span class="eyebrow">${t("Calidad y frescura","Quality & freshness",lang)}</span><h2 class="h-sec">${t("Calidad en la que <em>puedes confiar</em>","Quality you <em>can trust</em>",lang)}</h2><p class="lead" style="margin-bottom:22px">${t("Nuestras frutas y verduras se cultivan con esmero, siguiendo prácticas sostenibles y un riguroso control de calidad. Desde la semilla hasta la cosecha, aseguramos que cada paso del proceso cumpla nuestros exigentes estándares.","Our fruit and vegetables are grown with care, following sustainable practices and rigorous quality control. From seed to harvest, we ensure every step of the process meets our demanding standards.",lang)}</p><a href="${SLUG.quality[lang]}" class="btn btn-primary">${t("Nuestros estándares de calidad","Our quality standards",lang)} <span class="arrow">&rarr;</span></a></div>
+  </div></div></section>`;
+  const certsBand = `<section class="section bg-cream-soft certs-band"><div class="container center"><div class="sec-head center reveal"><h2 class="h-sec">${t("Certificados que <em>avalan</em> cada envío","Certifications behind <em>every shipment</em>",lang)}</h2></div><div class="cert-logos reveal"><div class="cert-chip"><img src="{{A}}img/cert-globalgap.png" alt="GlobalG.A.P." loading="lazy"></div><div class="cert-chip"><img src="{{A}}img/cert-ifs.png" alt="IFS Food" loading="lazy"></div><div class="cert-chip"><img src="{{A}}img/cert-brcgs.png" alt="BRCGS" loading="lazy"></div></div></div></section>`;
   const main = pageHero(IMG.hero, `<a href="index.html">${t("Inicio","Home",lang)}</a> / ${t("Frutas y Verduras","Fruits & Vegetables",lang)}`, h1, lead)
-    + `<section class="section bg-cream"><div class="container"><div class="grid-cards">${cards}</div></div></section>`
+    + intro + cardsSec + trust + certsBand
     + ctaBlock(lang, t("¿Montamos tu <em>surtido</em>?","Shall we build your <em>assortment</em>?",lang));
   return { id:"fruits", nav:"fruits", bodyClass:"header-solid", lang, main,
     title:t("Frutas y Verduras premium · Granadas Dama de Elche","Premium Fruits & Vegetables · Dama de Elche",lang),
@@ -229,11 +377,11 @@ const CONTENT = {
     es:{h1:'Nuestra <em>misión</em>', lead:'Cultivamos algo más que frutas: cultivamos confianza, salud y legado.',
         eyebrow:'Quiénes somos', h2:'Familia, tierra y <em>excelencia</em>',
         body:'Somos la segunda generación de una empresa familiar con más de 25 años cultivando y exportando frutas y verduras frescas desde Elche. Nuestra misión es ofrecer productos hortofrutícolas de la más alta calidad, que superen las expectativas del mercado internacional. Apostamos por una agricultura responsable, donde la sostenibilidad no es una tendencia, sino una forma de trabajar cada día.',
-        feats:[['Cuidar la tierra','Agricultura responsable y sostenible.'],['Impulsar el campo','Compromiso con nuestra gente y entorno.'],['Calidad sin concesiones','Control en cada etapa del proceso.'],['Mirada internacional','Llevamos Elche a más de 15 países.']]},
+        feats:[['Cuidar la tierra','Agricultura responsable y sostenible que protege el suelo, el agua y el entorno para las próximas generaciones.'],['Impulsar el campo','Compromiso real con nuestra gente, los agricultores locales y el territorio que nos rodea.'],['Calidad sin concesiones','Control exhaustivo en cada etapa, del campo al packaging, para que nada quede al azar.'],['Mirada internacional','Llevamos el sabor de Elche a más de 15 países con trazabilidad total.']]},
     en:{h1:'Our <em>mission</em>', lead:'We grow more than fruit: we grow trust, health and legacy.',
         eyebrow:'Who we are', h2:'Family, land and <em>excellence</em>',
         body:'We are the second generation of a family business with over 25 years growing and exporting fresh fruit and vegetables from Elche. Our mission is to deliver top-quality produce that exceeds the expectations of international markets. We are committed to responsible agriculture, where sustainability is not a trend but the way we work every day.',
-        feats:[['Care for the land','Responsible, sustainable farming.'],['Support the countryside','Commitment to our people and region.'],['Quality without compromise','Control at every stage.'],['International outlook','We take Elche to 15+ countries.']]} },
+        feats:[['Care for the land','Responsible, sustainable farming that protects soil, water and the environment for the generations to come.'],['Support the countryside','A real commitment to our people, local growers and the region around us.'],['Quality without compromise','Thorough control at every stage, from field to packaging, so nothing is left to chance.'],['International outlook','We take the flavour of Elche to 15+ countries with full traceability.']]} },
   sustain:{ id:"sustain", img:IMG.higos, nav:"sustain",
     es:{h1:'Más allá del cultivo: un <em>compromiso real</em>', lead:'La sostenibilidad no es una palabra de moda, es un principio que nos guía.',
         eyebrow:'Sostenibilidad', h2:'Tres ejes que <em>nos mueven</em>',
@@ -253,10 +401,31 @@ const CONTENT = {
         body:'We apply rigorous controls across the whole chain so fruit arrives flawless in any market. One-by-one visual selection, an unbroken cold chain, international certifications and full traceability from field to delivery.',
         feats:[['Hand selection','100% visual control before packing.'],['Cold chain','Controlled temperature to destination.'],['Global certification','GlobalG.A.P., BRCGS, GRASP, Carbon Trust.'],['Full traceability','From field to delivery, no gaps.']]} }
 };
+function pil(n,h,p){return `<div class="pillar reveal"><span class="pnum">— ${n}</span><h3>${h}</h3><p>${p}</p></div>`;}
+function contentExtra(key, lang){
+  if(key==="about"){
+    const valores = (lang==="en"
+      ? [['Excellence','We demand the most at every step, from field to client, improving continuously to beat any standard.'],['Sustainability','We grow with respect for the land, water and the future, with responsible practices that keep our farms viable long term.'],['Integrity','We act with honesty, transparency and consistency. What we say, we deliver.'],['Innovation','We invest in technology, research and improvements to produce more efficiently and with more added value.'],['Community','We support local jobs and social initiatives so our impact is positive beyond business.'],['Collaboration','We strengthen ties with staff, suppliers and clients, sharing goals and building value together.']]
+      : [['Excelencia','Nos exigimos lo máximo en cada paso, del campo al cliente, mejorando de forma continua para superar cualquier estándar.'],['Sostenibilidad','Cultivamos con respeto a la tierra, al agua y al futuro, con prácticas responsables que aseguran la viabilidad de nuestras fincas.'],['Integridad','Actuamos con honestidad, transparencia y coherencia. Lo que decimos, lo cumplimos.'],['Innovación','Invertimos en tecnología, investigación y mejoras para producir de forma más eficiente y con más valor añadido.'],['Comunidad','Apoyamos el empleo local y las iniciativas sociales para que nuestro impacto sea positivo más allá del negocio.'],['Colaboración','Reforzamos los vínculos con el equipo, proveedores y clientes, compartiendo objetivos y construyendo valor conjunto.']]
+    ).map(v=>`<div class="feature reveal"><h4>${v[0]}</h4><p>${v[1]}</p></div>`).join("");
+    return `<section class="section bg-cream-soft"><div class="container center"><div class="reveal" style="max-width:840px;margin-inline:auto"><span class="eyebrow">${t("Nuestra visión","Our vision",lang)}</span><h2 class="h-sec center">${t("Referentes en fruta <em>premium española</em>","A benchmark in <em>premium Spanish fruit</em>",lang)}</h2><p class="lead">${t("Queremos ser el proveedor preferido de frutas y verduras premium españolas en los mercados globales, reconocidos por nuestro compromiso con la calidad, la sostenibilidad y la innovación, con prácticas que sirvan de modelo para el sector.","We aim to be the preferred supplier of premium Spanish fruit and vegetables in global markets, recognised for our commitment to quality, sustainability and innovation, with practices that set an example for the sector.",lang)}</p></div></div></section>`
+      + `<section class="section bg-cream"><div class="container"><div class="sec-head center reveal"><span class="eyebrow">${t("Nuestros valores","Our values",lang)}</span><h2 class="h-sec">${t("Seis principios que <em>nos guían</em>","Six principles that <em>guide us</em>",lang)}</h2></div><div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">${valores}</div></div></section>`
+      + `<section class="section bg-cream-soft"><div class="container center"><div class="reveal" style="max-width:840px;margin-inline:auto"><span class="eyebrow">${t("Herencia familiar","Family heritage",lang)}</span><h2 class="h-sec center">${t("Más de 25 años <em>haciendo las cosas bien</em>","Over 25 years <em>doing things right</em>",lang)}</h2><p class="lead">${t("Empezamos con una pequeña plantación de granados y una gran pasión. Desde entonces hemos crecido manteniendo intactos nuestros valores: compromiso, honestidad y excelencia. El conocimiento transmitido de generación en generación se combina hoy con técnicas modernas y sostenibles. Más que producir fruta, construimos relaciones duraderas.","We started with a small pomegranate grove and a great deal of passion. Since then we have grown while keeping our values intact: commitment, honesty and excellence. Knowledge passed down through generations now blends with modern, sustainable techniques. More than growing fruit, we build lasting relationships.",lang)}</p></div></div></section>`;
+  }
+  if(key==="quality"){
+    const steps=[['01',t('Selección cuidadosa','Careful selection',lang),t('Seleccionamos cada fruta y verdura a mano, verificando tamaño, color y madurez. 100% control visual.','We select each fruit and vegetable by hand, checking size, colour and ripeness. 100% visual control.',lang)],['02',t('Cadena de frío','Cold chain',lang),t('Conservamos la frescura con una cadena de frío ininterrumpida desde la cosecha. Temperatura controlada.','We preserve freshness with an unbroken cold chain from harvest. Controlled temperature.',lang)],['03',t('Certificaciones','Certifications',lang),t('Cumplimos las normas internacionales de calidad y seguridad alimentaria. Certificación global.','We meet international quality and food-safety standards. Global certification.',lang)],['04',t('Trazabilidad total','Full traceability',lang),t('Control completo del campo a la entrega, con supervisión en todas las etapas.','Full control from field to delivery, with oversight at every stage.',lang)]].map(s=>pil(s[0],s[1],s[2])).join("");
+    return `<section class="section bg-ink"><div class="container"><div class="sec-head center reveal"><span class="eyebrow gold">${t("Control total","Total control",lang)}</span><h2 class="h-sec">${t("Rigor en <em>cada etapa</em>","Rigour at <em>every stage</em>",lang)}</h2><p class="lead">${t("Del campo al packaging aplicamos controles rigurosos para asegurar frescura, trazabilidad y cumplimiento de los estándares internacionales.","From field to packaging we apply rigorous controls to ensure freshness, traceability and compliance with international standards.",lang)}</p></div><div class="pillars">${steps}</div></div></section>`;
+  }
+  if(key==="sustain"){
+    return `<section class="section bg-cream-soft"><div class="container center"><div class="reveal" style="max-width:840px;margin-inline:auto"><span class="eyebrow">${t("Cómo trabajamos","How we work",lang)}</span><h2 class="h-sec center">${t("Producir hoy sin <em>hipotecar el mañana</em>","Producing today without <em>mortgaging tomorrow</em>",lang)}</h2><p class="lead">${t("Optimizamos el uso del agua con riego de precisión, reducimos residuos, aplicamos manejo integrado de plagas y cuidamos la biodiversidad del entorno. La sostenibilidad no es un añadido: es la forma en que cultivamos cada campaña.","We optimise water use with precision irrigation, reduce waste, apply integrated pest management and care for local biodiversity. Sustainability isn’t an add-on: it’s how we grow every season.",lang)}</p></div></div></section>`;
+  }
+  return "";
+}
 function contentPage(key, lang){
   const c = CONTENT[key], d = c[lang];
   const main = pageHero(c.img, `<a href="index.html">${t("Inicio","Home",lang)}</a> / ${d.h1.replace(/<[^>]+>/g,"")}`, d.h1, d.lead)
     + splitSection(c.img, key, d.eyebrow, d.h2, d.body, d.feats)
+    + contentExtra(key, lang)
     + ctaBlock(lang, t("¿Hablamos de tu <em>proyecto</em>?","Shall we talk about your <em>project</em>?",lang));
   return { id:c.id, nav:c.nav, bodyClass:"header-solid", lang, main,
     title:d.h1.replace(/<[^>]+>/g,"")+" · "+t("Granadas Dama de Elche","Dama de Elche",lang), desc:d.lead };
@@ -264,27 +433,46 @@ function contentPage(key, lang){
 
 /* ---- Certificaciones ---- */
 function certsPage(lang){
-  const certs = t(
-    [['GlobalG.A.P.','Buenas prácticas agrícolas y seguridad alimentaria.'],['IFS Food','Estándar internacional de calidad y seguridad.'],['BRCGS','Referencia global en seguridad alimentaria.'],['GRASP','Prácticas sociales responsables en el campo.'],['Carbon Trust','Medición y reducción de la huella de carbono.'],['Sorma / fruverpack','Partners de envasado y presentación.']],
-    [['GlobalG.A.P.','Good agricultural practices and food safety.'],['IFS Food','International quality and safety standard.'],['BRCGS','Global benchmark in food safety.'],['GRASP','Responsible social practices in the field.'],['Carbon Trust','Measuring and reducing carbon footprint.'],['Sorma / fruverpack','Packaging and presentation partners.']],
-    lang);
-  const cards = certs.map(c=>`<div class="feature reveal"><h4>${c[0]}</h4><p>${c[1]}</p></div>`).join("");
+  const CERTS = lang==="en" ? [
+    ['GlobalG.A.P.','Good Agricultural Practices','An agricultural assurance programme that turns consumer requirements into good practice: safe, sustainable production, responsible use of resources and worker welfare and safety.'],
+    ['BRCGS','Food Safety & Sustainability','One of the most demanding global food-safety standards: responsible resource management, waste reduction, environmental-impact control and ethical practices across the chain.'],
+    ['IFS Food','Quality & Food Safety Management','An internationally recognised standard that guarantees product safety, quality and legality through thorough controls at every stage, full traceability and continuous improvement.'],
+    ['BRC Food Safety','Global Food Safety Standard','A world-leading programme used by 28,000+ certified suppliers in 130 countries: comprehensive food-safety systems, rigorous facility and process controls and staff competence.'],
+    ['DOP','Protected Designation of Origin','Our Mollar pomegranate from Elche holds the PDO, guaranteeing authentic regional production, traditional methods, unique characteristics and protection against imitation.'],
+    ['GRASP','GlobalG.A.P. Social Practice','A module assessing social practices in the field: fair and safe working conditions, compliance with labour law and ethical business practices throughout our operations.']
+  ] : [
+    ['GlobalG.A.P.','Buenas Prácticas Agrícolas','Programa de aseguramiento agrícola que traduce las exigencias del consumidor en buenas prácticas: producción segura y sostenible, uso responsable de los recursos y bienestar y seguridad de los trabajadores.'],
+    ['BRCGS','Seguridad Alimentaria y Sostenibilidad','Uno de los estándares globales más exigentes en seguridad alimentaria: gestión responsable de recursos, reducción del desperdicio, control del impacto ambiental y prácticas éticas en toda la cadena.'],
+    ['IFS Food','Gestión de Calidad y Seguridad Alimentaria','Estándar reconocido internacionalmente que garantiza la seguridad, calidad y legalidad del producto mediante controles exhaustivos en cada etapa, trazabilidad integral y mejora continua.'],
+    ['BRC Food Safety','Norma Global de Seguridad Alimentaria','Programa líder mundial usado por más de 28.000 proveedores en 130 países: sistemas integrales de seguridad alimentaria, control riguroso de instalaciones y procesos y competencia del personal.'],
+    ['DOP','Denominación de Origen Protegida','Nuestra Granada Mollar de Elche cuenta con la DOP, que garantiza producción auténtica en la región, métodos tradicionales, características únicas y protección frente a imitaciones.'],
+    ['GRASP','Prácticas Sociales (GlobalG.A.P.)','Módulo que evalúa las prácticas sociales en el campo: condiciones laborales justas y seguras, cumplimiento de la normativa laboral y prácticas empresariales éticas.']
+  ];
+  const cards = CERTS.map((c,i)=>`<div class="feature reveal${i%3?(i%3===1?' d1':' d2'):''}"><h4>${c[0]}</h4><span class="cert-sub">${c[1]}</span><p>${c[2]}</p></div>`).join("");
+  const steps = (lang==="en"
+    ? [['01','Preparation','We align our management systems with the certification requirements.'],['02','Internal audit','We verify compliance with the standards before the external audit.'],['03','External audit','Independent auditors review our facilities and processes.'],['04','Continuous improvement','We keep certifications through constant monitoring and improvement.']]
+    : [['01','Preparación','Alineamos nuestros sistemas de gestión con los requisitos de certificación.'],['02','Auditoría interna','Verificamos el cumplimiento de los estándares antes de la auditoría externa.'],['03','Auditoría externa','Auditores independientes revisan nuestras instalaciones y procesos.'],['04','Mejora continua','Mantenemos las certificaciones con monitorización y mejora constantes.']]
+  ).map(s=>pil(s[0],s[1],s[2])).join("");
+  const certLogos = ['cert-globalgap.png','cert-ifs.png','cert-brcgs.png'].map(f=>`<div class="cert-chip"><img src="{{A}}img/${f}" alt="" loading="lazy"></div>`).join("");
   const h1=t('Certificaciones de <em>calidad</em>','Quality <em>certifications</em>',lang);
-  const lead=t('Auditados y trazables en cada campaña. Nuestras certificaciones avalan la seguridad, la calidad y la responsabilidad de todo lo que producimos.','Audited and traceable every season. Our certifications back the safety, quality and responsibility of everything we produce.',lang);
+  const lead=t('Contamos con certificaciones que garantizan la calidad, la trazabilidad y la seguridad de cada uno de nuestros procesos. Nuestro compromiso con la excelencia nos impulsa a superar los estándares del sector.','We hold certifications that guarantee the quality, traceability and safety of every one of our processes. Our commitment to excellence drives us to exceed industry standards.',lang);
   const main = pageHero(IMG.hero, `<a href="index.html">${t("Inicio","Home",lang)}</a> / ${t("Certificaciones","Certifications",lang)}`, h1, lead)
-    + `<section class="section bg-cream"><div class="container"><div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">${cards}</div></div></section>`
-    + ctaBlock(lang, t("¿Quieres los <em>certificados</em>?","Want the <em>certificates</em>?",lang));
+    + `<section class="section bg-cream"><div class="container">
+        <div class="sec-head center reveal"><span class="eyebrow">${t("Nuestro compromiso","Our commitment",lang)}</span><h2 class="h-sec">${t("Auditados, aprobados, <em>reconocidos</em>","Audited, approved, <em>recognised</em>",lang)}</h2><p class="lead">${t("Creemos que la calidad debe verificarse y validarse. Por eso invertimos en obtener y mantener certificaciones que demuestran nuestra adhesión a los estándares internacionales y a las mejores prácticas.","We believe quality must be verified and validated. That is why we invest in obtaining and maintaining certifications that prove our adherence to international standards and best practices.",lang)}</p></div>
+        <div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">${cards}</div>
+      </div></section>`
+    + `<section class="section bg-ink"><div class="container">
+        <div class="sec-head center reveal"><span class="eyebrow gold">${t("Cómo lo hacemos","How we do it",lang)}</span><h2 class="h-sec">${t("Nuestro proceso de <em>certificación</em>","Our certification <em>process</em>",lang)}</h2></div>
+        <div class="pillars">${steps}</div>
+      </div></section>`
+    + `<section class="section bg-cream certs-band"><div class="container center"><div class="sec-head center reveal"><h2 class="h-sec">${t("Sellos que nos <em>avalan</em>","Seals that <em>back us</em>",lang)}</h2></div><div class="cert-logos reveal">${certLogos}</div></div></section>`
+    + ctaBlock(lang, t("¿Quieres nuestros <em>certificados</em>?","Want our <em>certificates</em>?",lang));
   return { id:"certs", nav:"about", bodyClass:"header-solid", lang, main, title:t("Certificaciones de Calidad · Dama de Elche","Quality Certifications · Dama de Elche",lang), desc:lead };
 }
 
 /* ---- Noticias ---- */
 function newsPage(lang){
-  const items=[
-    [IMG.news1,'25 Abr 2025','25 Apr 2025',t('Los beneficios para la salud de las granadas Mollar de Elche','Health benefits of Mollar pomegranates from Elche',lang),t('Antioxidantes, vitaminas y sabor: por qué la Mollar es una de las granadas más valoradas.','Antioxidants, vitamins and flavour: why the Mollar is one of the most valued pomegranates.',lang)],
-    [IMG.news2,'25 Abr 2025','25 Apr 2025',t('Frutas Dama de Elche expande sus mercados en Asia','Frutas Dama de Elche expands its markets in Asia',lang),t('Nuevos acuerdos de distribución acercan nuestra fruta a mercados estratégicos.','New distribution deals bring our fruit to strategic markets.',lang)],
-    [IMG.news3,'23 Abr 2025','23 Apr 2025',t('Temporada de granadas: qué esperar este año','Pomegranate season: what to expect this year',lang),t('Calendario de campaña, variedades y previsiones de calibre y calidad.','Season calendar, varieties and calibre and quality forecasts.',lang)]
-  ];
-  const cards=items.map(n=>`<article class="ncard reveal"><div class="ncard-img" style="background-image:url('${n[0]}')"></div><div class="ncard-body"><span class="date">${lang==="en"?n[2]:n[1]}</span><h3>${n[3]}</h3><p>${n[4]}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></article>`).join("");
+  const cards=POSTS.map((p,i)=>`<a href="${p.slug[lang]}" class="ncard reveal${i?` d${i}`:""}"><div class="ncard-img" style="background-image:url('${p.img}')"></div><div class="ncard-body"><span class="date">${p.date[lang]}</span><h3>${p.title[lang]}</h3><p>${p.excerpt[lang]}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></a>`).join("");
   const h1=t('Últimas <em>noticias</em>','Latest <em>news</em>',lang);
   const lead=t('Novedades de campaña, noticias de cosecha y perspectivas del sector hortofrutícola.','Season updates, harvest news and insights from the fresh produce sector.',lang);
   const main = pageHero(IMG.hero, `<a href="index.html">${t("Inicio","Home",lang)}</a> / ${t("Noticias","News",lang)}`, h1, lead)
@@ -292,31 +480,77 @@ function newsPage(lang){
   return { id:"news", nav:"news", bodyClass:"header-solid", lang, main, title:t("Noticias · Granadas Dama de Elche","News · Dama de Elche",lang), desc:lead };
 }
 
-/* ---- Contacto ---- */
+/* ---- Post individual ---- */
+function postPage(p, lang){
+  const crumbs = `<a href="index.html">${t("Inicio","Home",lang)}</a> / <a href="${SLUG.news[lang]}">${t("Noticias","News",lang)}</a> / ${p.title[lang]}`;
+  const main = pageHero(p.img, crumbs, p.title[lang], p.excerpt[lang])
+    + `<section class="section bg-cream"><div class="container article-wrap">
+      <span class="date-lg">${p.date[lang]}</span>
+      <div class="article-body reveal">${p.body[lang]}</div>
+      <a href="${SLUG.news[lang]}" class="btn btn-ghost" style="margin-top:34px"><span class="arrow">&larr;</span> ${t("Volver a noticias","Back to news",lang)}</a>
+    </div></section>`
+    + ctaBlock(lang, t("¿Listo para llevar el <em>Mediterráneo</em> a tus clientes?","Ready to bring the <em>Mediterranean</em> to your clients?",lang));
+  return { id:p.key, nav:"news", bodyClass:"header-solid", lang, main, title:`${p.title[lang]} · Granadas Dama de Elche`, desc:p.excerpt[lang] };
+}
+
+/* ---- RGPD: 2 checks legales para formularios ---- */
+function rgpdChecks(lang){
+  const priv = SLUG.privacy[lang];
+  const l1 = lang==="en"
+    ? 'I have read and accept the <a href="'+priv+'" target="_blank" rel="noopener">Privacy Policy</a> and the processing of my data.'
+    : 'He leído y acepto la <a href="'+priv+'" target="_blank" rel="noopener">Política de Privacidad</a> y el tratamiento de mis datos.';
+  const l2 = lang==="en"
+    ? 'I agree to receive commercial communications from Frutas Dama de Elche. <span class="opt">(optional)</span>'
+    : 'Acepto recibir comunicaciones comerciales de Frutas Dama de Elche. <span class="opt">(opcional)</span>';
+  return '<div class="form-consent">'
+    + '<label class="ck"><input type="checkbox" name="privacidad" required><span>'+l1+'</span></label>'
+    + '<label class="ck"><input type="checkbox" name="comunicaciones"><span>'+l2+'</span></label>'
+    + '</div>';
+}
+
+/* ---- Contacto (captación B2B, formulario protagonista) ---- */
 function contactPage(lang){
-  const info=`<div class="grid-cards" style="grid-template-columns:repeat(3,1fr)">
+  const opts = lang==="en"
+    ? ['Supermarket chain','Distributor / wholesaler','Importer / exporter','HORECA','Other']
+    : ['Cadena de supermercados','Distribuidor / mayorista','Importador / exportador','HORECA','Otro'];
+  const sel = '<option value="" disabled selected>'+(lang==="en"?'I am a…':'Soy…')+'</option>'+opts.map(function(o){return '<option>'+o+'</option>';}).join("");
+  const points = lang==="en"
+    ? ['Reply within 24 hours','Free samples and spec sheet','Volume pricing and season calendar','Export to 15+ countries, full traceability']
+    : ['Respuesta en menos de 24 horas','Muestras y ficha técnica sin compromiso','Precios por volumen y calendario de campaña','Exportación a +15 países con trazabilidad total'];
+  const pts = points.map(function(p){return '<li>'+p+'</li>';}).join("");
+  const hero = `<section class="lead-hero">
+    <div class="hero-bg" style="background-image:url('${IMG.hero}')"></div>
+    <div class="container lead-hero-grid">
+      <div class="lead-copy reveal">
+        <div class="breadcrumb"><a href="index.html">${t("Inicio","Home",lang)}</a> / ${t("Contacto","Contact",lang)}</div>
+        <h1>${t('Hablemos de <em>volumen</em>','Let’s talk <em>volume</em>',lang)}</h1>
+        <p class="lead">${t('Somos productores y exportadores directos desde Elche. Si eres cadena, distribuidor o importador, cuéntanos qué necesitas y te preparamos una propuesta a medida.','We are direct growers and exporters from Elche. If you are a chain, distributor or importer, tell us what you need and we’ll prepare a tailored proposal.',lang)}</p>
+        <ul class="lead-points">${pts}</ul>
+      </div>
+      <div class="lead-card reveal d1">
+        <h2>${t('Solicita tu propuesta','Request your proposal',lang)}</h2>
+        <p class="lead-card-sub">${t('Menos de un minuto. Sin compromiso.','Under a minute. No commitment.',lang)}</p>
+        <form name="ventas" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="ventas">
+          <p style="display:none"><label>No: <input name="bot-field"></label></p>
+          <div><label class="lb">${t("Nombre","Name",lang)}*</label><input class="field" name="nombre" required></div>
+          <div><label class="lb">${t("Empresa","Company",lang)}*</label><input class="field" name="empresa" required></div>
+          <div><label class="lb">Email*</label><input class="field" type="email" name="email" required></div>
+          <div><label class="lb">${t("Teléfono","Phone",lang)}</label><input class="field" name="telefono"></div>
+          <div><label class="lb">${t("Perfil","Profile",lang)}</label><select class="field" name="perfil">${sel}</select></div>
+          <button class="btn btn-primary full" type="submit">${t("Quiero mi propuesta","I want my proposal",lang)} <span class="arrow">&rarr;</span></button>
+          ${rgpdChecks(lang)}
+        </form>
+      </div>
+    </div>
+  </section>`;
+  const info=`<section class="section bg-cream"><div class="container"><div class="grid-cards" style="grid-template-columns:repeat(3,1fr)">
     <div class="feature reveal"><h4>${t("Teléfono","Phone",lang)}</h4><p><a href="tel:+34965458656">+34 965 458 656</a><br>${t("Lun–Vie 8:00–20:00 (GMT+1)","Mon–Fri 8:00–20:00 (GMT+1)",lang)}</p></div>
     <div class="feature reveal d1"><h4>Email</h4><p><a href="mailto:info@granadasdamadeelche.com">info@granadasdamadeelche.com</a><br>${t("Respondemos en 24 h","We reply within 24 h",lang)}</p></div>
     <div class="feature reveal d2"><h4>${t("Dónde estamos","Where we are",lang)}</h4><p>C/ Santuario de la Luz, 7<br>Parque Agroalimentario La Alcudia<br>03290 Elche, Alicante</p></div>
-  </div>`;
-  const form=`<section class="section bg-cream-soft"><div class="container">
-    <div class="sec-head center reveal"><span class="eyebrow">${t("Escríbenos","Write to us",lang)}</span><h2 class="h-sec">${t("Cuéntanos qué <em>necesitas</em>","Tell us what you <em>need</em>",lang)}</h2><p class="lead">${t("Volumen, formatos, mercado… te preparamos una propuesta a medida.","Volume, formats, market… we’ll prepare a tailored proposal.",lang)}</p></div>
-    <form class="reveal" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width:760px;margin-inline:auto">
-      <input type="hidden" name="form-name" value="contacto"><p style="display:none"><label>No: <input name="bot-field"></label></p>
-      <div class="form-grid">
-        <div><label class="lb">${t("Nombre","Name",lang)}</label><input class="field" name="nombre" required></div>
-        <div><label class="lb">${t("Empresa","Company",lang)}</label><input class="field" name="empresa"></div>
-        <div><label class="lb">${t("Teléfono","Phone",lang)}</label><input class="field" name="telefono"></div>
-        <div><label class="lb">Email</label><input class="field" type="email" name="email" required></div>
-        <div class="full"><label class="lb">${t("Mensaje","Message",lang)}</label><textarea class="field" name="mensaje" placeholder="${t("Escribe aquí tu consulta.","Write your enquiry here.",lang)}"></textarea></div>
-      </div>
-      <div style="text-align:center;margin-top:22px"><button class="btn btn-primary" type="submit">${t("Enviar","Send",lang)} <span class="arrow">&rarr;</span></button></div>
-    </form></div></section>`;
-  const h1=t('Hablemos de tu <em>proyecto</em>','Let’s talk about your <em>project</em>',lang);
-  const lead=t('¿Quieres más información sobre nuestros productos, exportación o disponibilidad? Nuestro equipo comercial te contactará en breve.','Want more information about our products, exports or availability? Our sales team will get back to you shortly.',lang);
-  const main = pageHero(IMG.hero, `<a href="index.html">${t("Inicio","Home",lang)}</a> / ${t("Contacto","Contact",lang)}`, h1, lead)
-    + `<section class="section bg-cream"><div class="container">${info}</div></section>` + form;
-  return { id:"contact", nav:"contact", bodyClass:"header-solid", lang, main, title:t("Contacto · Granadas Dama de Elche","Contact · Dama de Elche",lang), desc:lead };
+  </div></div></section>`;
+  const main = hero + info;
+  return { id:"contact", nav:"contact", bodyClass:"header-solid", lang, main, title:t("Contacto · Granadas Dama de Elche","Contact · Dama de Elche",lang), desc:t('Proveedor directo de fruta premium para cadenas, distribuidores e importadores. Pide tu propuesta a medida.','Direct supplier of premium fruit for chains, distributors and importers. Request your tailored proposal.',lang) };
 }
 
 /* ---- Legales (texto real de pomegranatespain.com; ES + traducción EN) ---- */
@@ -378,24 +612,24 @@ function homePage(lang){
     ${pil("04",t("Trazabilidad total","Full traceability",lang),t("Del campo a la entrega, sin lagunas.","From field to delivery, no gaps.",lang))}
   </div></div></section>
 
+<section class="section bg-cream certs-band"><div class="container center">
+  <div class="sec-head center reveal"><h2 class="h-sec">${t("Certificados que <em>avalan</em> cada envío","Certifications behind <em>every shipment</em>",lang)}</h2><p class="lead">${t("Cumplimos los estándares internacionales más exigentes en seguridad alimentaria y sostenibilidad.","We meet the most demanding international standards in food safety and sustainability.",lang)}</p></div>
+  <div class="cert-logos reveal">
+    <div class="cert-chip"><img src="{{A}}img/cert-globalgap.png" alt="GlobalG.A.P." loading="lazy"></div>
+    <div class="cert-chip"><img src="{{A}}img/cert-ifs.png" alt="IFS Food" loading="lazy"></div>
+    <div class="cert-chip"><img src="{{A}}img/cert-brcgs.png" alt="BRCGS" loading="lazy"></div>
+  </div>
+</div></section>
+
 <section class="section bg-cream-soft"><div class="container center">
   <div class="sec-head center reveal"><span class="eyebrow">${t("Exportación","Exports",lang)}</span><h2 class="h-sec">${t("Exportamos sabor y origen a más de <em>15 países</em>","We export flavour and origin to over <em>15 countries</em>",lang)}</h2><p class="lead">${t("Presencia global desde Europa hasta América, África y Asia.","Global presence from Europe to America, Africa and Asia.",lang)}</p></div>
   <div class="export-map reveal"><img src="${IMG.map}" alt="${t("Mapa de exportación","Export map",lang)}" loading="lazy"></div>
-  <div class="country-pills reveal"><span>Canadá</span><span>Brasil</span><span>Alemania</span><span>Francia</span><span>${t("Reino Unido","United Kingdom",lang)}</span><span>Italia</span><span>Polonia</span><span>Kenia</span><span>Ghana</span><span>Indonesia</span></div>
+  ${(()=>{const C=[["ca","Canadá","Canada"],["br","Brasil","Brazil"],["de","Alemania","Germany"],["fr","Francia","France"],["gb","Reino Unido","United Kingdom"],["it","Italia","Italy"],["pl","Polonia","Poland"],["ke","Kenia","Kenya"],["gh","Ghana","Ghana"],["id","Indonesia","Indonesia"]];return `<div class="flag-pills reveal">`+C.map(c=>`<span class="flag-pill"><img class="flag" src="https://flagcdn.com/${c[0]}.svg" alt="" loading="lazy" width="26" height="19">${lang==="en"?c[2]:c[1]}</span>`).join("")+`</div>`;})()}
 </div></section>
 
 <section class="section bg-cream"><div class="container">
   <div class="sec-head between reveal"><div><span class="eyebrow">Blog</span><h2 class="h-sec">${t("Últimas noticias","Latest news",lang)}</h2></div><a href="${SLUG.news[lang]}" class="btn btn-ghost">${t("Ver todas","See all",lang)} <span class="arrow">&rarr;</span></a></div>
-  <div class="blog-grid">
-    <a href="${SLUG.news[lang]}" class="ncard reveal"><div class="ncard-img" style="background-image:url('${IMG.news1}')"></div><div class="ncard-body"><span class="date">${t("25 Abr 2025","25 Apr 2025",lang)}</span><h3>${t("Beneficios de las granadas Mollar de Elche","Benefits of Mollar pomegranates",lang)}</h3><p>${t("Antioxidantes, vitaminas y sabor.","Antioxidants, vitamins and flavour.",lang)}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></a>
-    <a href="${SLUG.news[lang]}" class="ncard reveal d1"><div class="ncard-img" style="background-image:url('${IMG.news2}')"></div><div class="ncard-body"><span class="date">${t("25 Abr 2025","25 Apr 2025",lang)}</span><h3>${t("Nuevos mercados en Asia","New markets in Asia",lang)}</h3><p>${t("Acuerdos que acercan nuestra fruta al mundo.","Deals that bring our fruit to the world.",lang)}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></a>
-    <a href="${SLUG.news[lang]}" class="ncard reveal d2"><div class="ncard-img" style="background-image:url('${IMG.news3}')"></div><div class="ncard-body"><span class="date">${t("23 Abr 2025","23 Apr 2025",lang)}</span><h3>${t("Temporada de granadas 2026","Pomegranate season 2026",lang)}</h3><p>${t("Calendario, variedades y previsiones.","Calendar, varieties and forecasts.",lang)}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></a>
-  </div></div></section>
-
-<section class="section--tight bg-ink"><div class="container center"><div class="reveal">
-  <span class="eyebrow gold">${t("Boletín","Newsletter",lang)}</span><h2 class="h-sec" style="font-size:clamp(26px,3.6vw,38px)">${t("Suscríbete a nuestro boletín","Subscribe to our newsletter",lang)}</h2><p class="lead">${t("Novedades de campaña y disponibilidad, directas a tu correo.","Season updates and availability, straight to your inbox.",lang)}</p>
-  <form class="newsletter-box" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="newsletter"><p style="display:none"><label>No: <input name="bot-field"></label></p><input class="field" type="email" name="email" placeholder="${t("tu@correo.com","you@email.com",lang)}" required aria-label="Email"><button type="submit" class="btn btn-primary">${t("Suscribirme","Subscribe",lang)}</button></form>
-</div></div></section>
+  <div class="blog-grid">${POSTS.map((p,i)=>`<a href="${p.slug[lang]}" class="ncard reveal${i?` d${i}`:""}"><div class="ncard-img" style="background-image:url('${p.img}')"></div><div class="ncard-body"><span class="date">${p.date[lang]}</span><h3>${p.title[lang]}</h3><p>${p.excerpt[lang]}</p><span class="more">${t("Leer más","Read more",lang)} <span class="arrow">&rarr;</span></span></div></a>`).join("")}</div></div></section>
 
 ${ctaBlock(lang, t("¿Listo para llevar el <em>Mediterráneo</em> a tus clientes?","Ready to bring the <em>Mediterranean</em> to your clients?",lang))}
 `;
@@ -419,6 +653,7 @@ langs.forEach(lang=>{
   ["about","sustain","quality"].forEach(k=>pages.push(contentPage(k,lang)));
   pages.push(certsPage(lang));
   pages.push(newsPage(lang));
+  POSTS.forEach(p=>pages.push(postPage(p,lang)));
   pages.push(contactPage(lang));
   ["privacy","terms","cookies","legal"].forEach(k=>pages.push(legalPage(k,lang)));
   pages.forEach(pg=>{ fs.writeFileSync(outPath(pg.id,lang), shell(pg)); count++; });

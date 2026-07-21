@@ -82,4 +82,20 @@
       });
     });
   }
+
+  /* ---- Pestañas de producto (Características/Nutrición/Cultivo) ---- */
+  document.querySelectorAll("[data-tabs]").forEach(function (tabs) {
+    var btns = tabs.querySelectorAll(".tab-btn");
+    var panels = tabs.querySelectorAll(".tab-panel");
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var i = b.getAttribute("data-tab");
+        btns.forEach(function (x) { x.classList.remove("is-active"); });
+        panels.forEach(function (x) { x.classList.remove("is-active"); });
+        b.classList.add("is-active");
+        var panel = tabs.querySelector('.tab-panel[data-panel="' + i + '"]');
+        if (panel) panel.classList.add("is-active");
+      });
+    });
+  });
 })();
