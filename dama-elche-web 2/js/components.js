@@ -23,6 +23,7 @@
     pimientos: { es:"pimientos.html",                    en:"peppers.html" },
     coliflor:  { es:"coliflor.html",                     en:"cauliflower.html" },
     higos:     { es:"higos-y-brevas.html",               en:"figs.html" },
+    limones:   { es:"limones.html",                      en:"lemons.html" },
     quality:   { es:"calidad-y-frescura.html",           en:"quality.html" },
     certs:     { es:"certificaciones-de-calidad.html",   en:"certifications.html" },
     privacy:   { es:"politica-de-privacidad.html",       en:"privacy-policy.html" },
@@ -48,7 +49,7 @@
       legal:[["terms","Términos"],["privacy","Privacidad"],["cookies","Cookies"],["legal","Aviso legal"]],
       cookie:'Usamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico. Consulta nuestra <a href="'+hrefSame("cookies")+'">Política de Cookies</a>.',
       accept:"Aceptar", reject:"Rechazar",
-      prodNav:[["granadas","Granadas"],["pimientos","Pimientos"],["coliflor","Coliflor"],["higos","Higos y Brevas"]]
+      prodNav:[["granadas","Granadas"],["pimientos","Pimientos"],["coliflor","Coliflor"],["higos","Higos y Brevas"],["limones","Limones"]]
     },
     en: {
       contact:"Contact", nav:["home","fruits","about","sustain","news","catalog","contact"],
@@ -58,7 +59,7 @@
       legal:[["terms","Terms"],["privacy","Privacy"],["cookies","Cookies"],["legal","Legal notice"]],
       cookie:'We use our own and third-party cookies to improve your experience and analyse traffic. See our <a href="'+hrefSame("cookies")+'">Cookie Policy</a>.',
       accept:"Accept", reject:"Decline",
-      prodNav:[["granadas","Pomegranates"],["pimientos","Peppers"],["coliflor","Cauliflower"],["higos","Figs & Brevas"]]
+      prodNav:[["granadas","Pomegranates"],["pimientos","Peppers"],["coliflor","Cauliflower"],["higos","Figs & Brevas"],["limones","Lemons"]]
     }
   }[L];
 
@@ -79,7 +80,7 @@
 
   // ---- HEADER ----
   var SUB = {
-    fruits: [["granadas","Granadas","Pomegranates"],["pimientos","Pimientos","Peppers"],["coliflor","Coliflor","Cauliflower"],["higos","Higos y Brevas","Figs & Brevas"]],
+    fruits: [["granadas","Granadas","Pomegranates"],["pimientos","Pimientos","Peppers"],["coliflor","Coliflor","Cauliflower"],["higos","Higos y Brevas","Figs & Brevas"],["limones","Limones","Lemons"]],
     about:  [["about","Misión y Valores","Mission & Values"],["quality","Calidad y Frescura","Quality & Freshness"],["certs","Certificaciones de Calidad","Certifications"]]
   };
   var subLabel = function (s) { return isEN ? s[2] : s[1]; };
