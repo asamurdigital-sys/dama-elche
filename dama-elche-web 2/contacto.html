@@ -10,12 +10,14 @@
 <link rel="alternate" hreflang="x-default" href="https://pomegranatespain.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/styles.min.css">
+<noscript><style>.hero-bg{opacity:1 !important}.img-fade{opacity:1 !important}</style></noscript>
 </head>
 <body class="header-solid" data-page="contact" data-nav="contact" data-lang="es">
 <main>
 <section class="lead-hero">
-    <div class="hero-bg" style="background-image:url('img/hero.png')"></div>
+    <div class="hero-bg" style="background-image:url('img/hero.webp')"></div>
     <div class="container lead-hero-grid">
       <div class="lead-copy reveal">
         <div class="breadcrumb"><a href="index.html">Inicio</a> / Contacto</div>
@@ -45,7 +47,7 @@
     <div class="feature reveal d2"><h4>Dónde estamos</h4><p>C/ Santuario de la Luz, 7<br>Parque Agroalimentario La Alcudia<br>03290 Elche, Alicante</p></div>
   </div></div></section>
 </main>
-<script src="js/components.js"></script>
-<script src="js/main.js"></script>
+<script src="js/components.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

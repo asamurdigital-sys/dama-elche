@@ -21,9 +21,23 @@
     menu.classList.toggle("open", open);
     document.body.classList.toggle("no-scroll", open);
     if (burger) burger.setAttribute("aria-expanded", open ? "true" : "false");
+    if (!open) {
+      menu.querySelectorAll(".mm-group.open").forEach(function (g) {
+        g.classList.remove("open");
+        var b = g.querySelector(".mm-toggle"); if (b) b.setAttribute("aria-expanded", "false");
+      });
+    }
   };
   if (burger) burger.addEventListener("click", function () { setMenu(!menu.classList.contains("open")); });
   if (closeBtn) closeBtn.addEventListener("click", function () { setMenu(false); });
+  if (menu) menu.querySelectorAll(".mm-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault(); e.stopPropagation();
+      var g = btn.closest(".mm-group"); if (!g) return;
+      var op = g.classList.toggle("open");
+      btn.setAttribute("aria-expanded", op ? "true" : "false");
+    });
+  });
   if (menu) menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
 
@@ -106,4 +120,20 @@
     if (im.complete && im.naturalWidth) { done(); }
     else { im.addEventListener("load", done); im.addEventListener("error", done); }
   });
+
+  /* ---- Hero: revelar de golpe cuando la imagen está 100% cargada (wow limpio) ---- */
+  var heroBgs = document.querySelectorAll(".hero-bg");
+  var revealHero = function (hb) { hb.classList.add("hero-in"); };
+  heroBgs.forEach(function (hb) {
+    var bg = hb.style.backgroundImage || getComputedStyle(hb).backgroundImage || "";
+    var m = /url\((['"]?)(.*?)\1\)/.exec(bg);
+    if (m && m[2]) {
+      var im = new Image();
+      im.onload = function () { revealHero(hb); };
+      im.onerror = function () { revealHero(hb); };
+      im.src = m[2];
+      if (im.complete) revealHero(hb);
+    } else { revealHero(hb); }
+  });
+  window.addEventListener("load", function () { heroBgs.forEach(revealHero); });
 })();

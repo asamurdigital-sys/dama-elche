@@ -102,16 +102,18 @@
     '</div></header>';
 
   // ---- MENÚ MÓVIL ----
-  var mmNav = T.nav.map(function (id) {
-    var top = '<a href="' + hrefSame(id) + '"' + extAttr(id) + '>' + PAGES[id].nav[L] + '</a>';
-    if (SUB[id]) { return top + SUB[id].map(function (s) { return '<a class="mm-sub" href="' + hrefSame(s[0]) + '">' + subLabel(s) + '</a>'; }).join(""); }
-    return top;
+  var mmItems = T.nav.map(function (id) {
+    if (SUB[id]) {
+      var subs = SUB[id].map(function (s) { return '<a class="mm-sub" href="' + hrefSame(s[0]) + '">' + subLabel(s) + '</a>'; }).join("");
+      return '<div class="mm-group"><div class="mm-parent"><a class="mm-link" href="' + hrefSame(id) + '">' + PAGES[id].nav[L] + '</a><button class="mm-toggle" aria-expanded="false" aria-label="' + (isEN ? 'Expand' : 'Desplegar') + '"><span class="mm-caret"></span></button></div><div class="mm-sub-wrap">' + subs + '</div></div>';
+    }
+    return '<a class="mm-link" href="' + hrefSame(id) + '"' + extAttr(id) + '>' + PAGES[id].nav[L] + '</a>';
   }).join("");
   var mobile =
     '<div class="mobile-menu" id="mobileMenu"><button class="mm-close" aria-label="Cerrar">&times;</button>' +
-      mmNav +
+      '<nav class="mm-nav">' + mmItems + '</nav>' +
       '<a href="' + hrefSame("contact") + '" class="btn btn-primary mm-cta">' + T.contact + '</a>' +
-      langSwitch.replace('class="lang-switch"','class="lang-switch" style="margin-top:18px"') +
+      '<div class="mm-lang">' + langSwitch + '</div>' +
     '</div>';
 
   // ---- FOOTER ----
