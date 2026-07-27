@@ -393,7 +393,7 @@ function fruitsPage(lang){
     ["limones",IMG.limones,t("Cítricos","Citrus",lang),t("Limones","Lemons",lang),t("Fino y Verna, zumo y aroma.","Fino and Verna, juice and aroma.",lang)]
   ].map(c=>`<a href="${SLUG[c[0]][lang]}" class="pcard reveal"><div class="pcard-img" style="background-image:url('${c[1]}')"></div><span class="tag">${c[2]}</span><div class="pcard-body"><h3>${c[3]}</h3><p>${c[4]}</p><span class="more">${t("Ver más","See more",lang)} <span class="arrow">&rarr;</span></span></div></a>`).join("");
   const h1=t('Frutas y verduras <em>del Mediterráneo</em>','Fruit &amp; vegetables <em>from the Mediterranean</em>',lang);
-  const lead=t('Nuestra gama completa, seleccionada uno a uno para el canal profesional: granadas, pimientos, coliflor e higos y brevas.','Our full range, selected one by one for the professional channel: pomegranates, peppers, cauliflower and figs & brevas.',lang);
+  const lead=t('Nuestra gama completa, seleccionada uno a uno para el canal profesional: granadas, pimientos, limones, coliflor e higos y brevas.','Our full range, selected one by one for the professional channel: pomegranates, peppers, lemons, cauliflower and figs & brevas.',lang);
   const intro = `<section class="section bg-cream"><div class="container center"><div class="sec-head center reveal"><span class="eyebrow">${t("Nuestra gama","Our range",lang)}</span><h2 class="h-sec">${t("Selección con <em>alma mediterránea</em>","A selection with <em>Mediterranean soul</em>",lang)}</h2><p class="lead">${t("En Frutas Dama de Elche cultivamos y exportamos frutas y verduras frescas con el compromiso de ofrecer siempre productos de máxima calidad. Cada variedad cumple los más altos estándares de sabor, frescura y valor nutricional, gracias a una producción sostenible y orientada al detalle.","At Frutas Dama de Elche we grow and export fresh fruit and vegetables committed to always delivering top quality. Every variety meets the highest standards of flavour, freshness and nutritional value, thanks to sustainable, detail-driven production.",lang)}</p></div></div></section>`;
   const cardsSec = `<section class="section bg-cream-soft"><div class="container"><div class="grid-cards">${cards}</div></div></section>`;
   const trust = `<section class="section bg-cream"><div class="container"><div class="split">
@@ -624,8 +624,9 @@ function homePage(lang){
 <section class="hero"><div class="hero-bg" style="background-image:url('${IMG.hero}')"></div>
   <div class="container">
     <h1>${t("La fruta que exige <em>excelencia</em>. Y la cumple.","The fruit that demands <em>excellence</em>. And delivers.",lang)}</h1>
-    <p class="lead">${t("Granadas, pimientos, higos y coliflores seleccionados uno a uno desde Elche. Para tiendas, chefs y distribuidores que buscan lo memorable.","Pomegranates, peppers, figs and cauliflower selected one by one from Elche. For retailers, chefs and distributors who look for the memorable.",lang)}</p>
-    <div class="btn-row"><a href="${SLUG.fruits[lang]}" class="btn btn-light">${heroBtn1} <span class="arrow">&rarr;</span></a><a href="${SLUG.contact[lang]}" class="btn btn-ghost-light">${heroBtn2}</a></div>
+    <p class="lead">${t("Granadas, pimientos, limones, higos y coliflores seleccionados uno a uno desde Elche. Para tiendas, chefs y distribuidores que buscan lo memorable.","Pomegranates, peppers, lemons, figs and cauliflower selected one by one from Elche. For retailers, chefs and distributors who look for the memorable.",lang)}</p>
+    <div class="btn-row"><a href="${SLUG.contact[lang]}" class="btn btn-light">${heroBtn2} <span class="arrow">&rarr;</span></a><a href="${SLUG.fruits[lang]}" class="btn btn-ghost-light">${heroBtn1}</a></div>
+    <p class="hero-trust">${t("GlobalG.A.P. · IFS · BRCGS · Exportación a +15 países","GlobalG.A.P. · IFS · BRCGS · Export to 15+ countries",lang)}</p>
   </div><span class="scroll-hint">${t("Descubre","Discover",lang)}</span></section>
 
 <section class="section--tight bg-ink"><div class="container"><div class="stats">
@@ -633,7 +634,7 @@ function homePage(lang){
 </div></div></section>
 
 <section class="section bg-cream"><div class="container">
-  <div class="sec-head center reveal"><span class="eyebrow">${t("Nuestra gama","Our range",lang)}</span><h2 class="h-sec">${t("Selección con <em>alma mediterránea</em>","A selection with <em>Mediterranean soul</em>",lang)}</h2><p class="lead">${t("Cuatro categorías para el canal profesional: sabor, calibre y presentación con constancia campaña tras campaña.","Four categories for the professional channel: flavour, calibre and presentation, consistent season after season.",lang)}</p></div>
+  <div class="sec-head center reveal"><span class="eyebrow">${t("Nuestra gama","Our range",lang)}</span><h2 class="h-sec">${t("Selección con <em>alma mediterránea</em>","A selection with <em>Mediterranean soul</em>",lang)}</h2><p class="lead">${t("Cinco categorías para el canal profesional: sabor, calibre y presentación con constancia campaña tras campaña.","Five categories for the professional channel: flavour, calibre and presentation, consistent season after season.",lang)}</p></div>
   <div class="grid-cards">
     ${pcard("granadas",IMG.granadas,t("Estrella","Signature",lang),t("Granadas","Pomegranates",lang),t("Mollar, Wonderful, Acco y más.","Mollar, Wonderful, Acco and more.",lang))}
     ${pcard("pimientos",IMG.pimientos,t("Tricolor","Tricolour",lang),t("Pimientos","Peppers",lang),t("Rojo, amarillo y verde de alta gama.","Premium red, yellow and green.",lang))}
@@ -672,7 +673,7 @@ function homePage(lang){
 
 ${ctaBlock(lang, t("¿Listo para llevar el <em>Mediterráneo</em> a tus clientes?","Ready to bring the <em>Mediterranean</em> to your clients?",lang))}
 `;
-  return { id:"home", lang, main, title:t("Granadas Dama de Elche · Frutas y verduras premium del Mediterráneo","Granadas Dama de Elche · Premium Mediterranean fruit & vegetables",lang), desc:t("Granadas, pimientos, higos y coliflores premium desde Elche. Trazabilidad total y exportación a más de 15 países.","Premium pomegranates, peppers, figs and cauliflower from Elche. Full traceability and export to 15+ countries.",lang) };
+  return { id:"home", lang, main, title:t("Granadas Dama de Elche · Frutas y verduras premium del Mediterráneo","Granadas Dama de Elche · Premium Mediterranean fruit & vegetables",lang), desc:t("Granadas, pimientos, limones, higos y coliflores premium desde Elche. Trazabilidad total y exportación a más de 15 países.","Premium pomegranates, peppers, lemons, figs and cauliflower from Elche. Full traceability and export to 15+ countries.",lang) };
 }
 
 /* ============================ GENERAR ============================ */
