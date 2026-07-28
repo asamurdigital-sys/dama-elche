@@ -409,6 +409,26 @@ select.field{cursor:pointer}
 .article-body em{font-family:var(--font-accent); font-style:italic; color:var(--garnet)}
 .date-lg{display:inline-block; font-family:var(--font-display); font-weight:600; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin-bottom:14px}
 
+/* ---------- Galería (masonry) + lightbox ---------- */
+.gallery{columns:3 280px; column-gap:16px}
+.gal-item{display:block; margin:0 0 16px; break-inside:avoid; border-radius:var(--r-md); overflow:hidden; position:relative; cursor:zoom-in; box-shadow:var(--shadow-soft)}
+.gal-item img{width:100%; height:auto; display:block; transition:transform .6s var(--ease)}
+.gal-item::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(30,15,14,.4)); opacity:0; transition:opacity .35s var(--ease)}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-item:hover::after{opacity:1}
+@media(max-width:900px){.gallery{columns:2 180px; column-gap:12px} .gal-item{margin-bottom:12px}}
+@media(max-width:520px){.gallery{columns:1}}
+.lightbox{position:fixed; inset:0; z-index:400; background:rgba(15,8,8,.94); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:opacity .3s var(--ease), visibility .3s; padding:24px}
+.lightbox.open{opacity:1; visibility:visible}
+.lightbox .lb-img{max-width:92vw; max-height:88vh; border-radius:10px; box-shadow:0 30px 80px rgba(0,0,0,.6); animation:lbin .35s var(--ease)}
+@keyframes lbin{from{opacity:0; transform:scale(.96)}to{opacity:1; transform:none}}
+.lb-close{position:absolute; top:16px; right:20px; width:48px; height:48px; border:0; background:transparent; color:var(--cream); font-size:38px; line-height:1; cursor:pointer; opacity:.85}
+.lb-close:hover{opacity:1}
+.lb-nav{position:absolute; top:50%; transform:translateY(-50%); width:56px; height:56px; border:0; border-radius:50%; background:rgba(250,246,238,.12); color:var(--cream); font-size:32px; line-height:1; cursor:pointer; transition:background .2s; display:grid; place-items:center}
+.lb-nav:hover{background:rgba(250,246,238,.24)}
+.lb-prev{left:16px} .lb-next{right:16px}
+@media(max-width:600px){.lb-nav{width:44px;height:44px;font-size:26px} .lb-prev{left:6px} .lb-next{right:6px}}
+
 /* ==========================================================================
    Reveal al hacer scroll
    ========================================================================== */

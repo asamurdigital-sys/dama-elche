@@ -17,6 +17,7 @@
     about:     { es:"mision-y-valores.html",             en:"about.html",          nav:{es:"Nosotros",en:"About"} },
     sustain:   { es:"sostenibilidad.html",               en:"sustainability.html", nav:{es:"Sostenibilidad",en:"Sustainability"} },
     news:      { es:"noticias.html",                     en:"news.html",           nav:{es:"Noticias",en:"News"} },
+    gallery:   { es:"galeria.html",                      en:"gallery.html",        nav:{es:"Galería",en:"Gallery"} },
     contact:   { es:"contacto.html",                     en:"contact.html",        nav:{es:"Contacto",en:"Contact"} },
     catalog:   { es:"https://www.nuestrocatalogo.es/Frutas_Dama_De_Elche/MailView/", en:"https://www.nuestrocatalogo.es/Frutas_Dama_De_Elche/MailView/", nav:{es:"Catálogo",en:"Catalogue"} },
     granadas:  { es:"granadas.html",                     en:"pomegranates.html" },
@@ -42,7 +43,7 @@
 
   var T = {
     es: {
-      contact:"Contactar", nav:["home","fruits","about","sustain","news","catalog","contact"],
+      contact:"Contactar", nav:["home","fruits","about","sustain","news","gallery","contact"],
       explore:"Explorar", products:"Productos", contactCol:"Contacto",
       brandDesc:"Segunda generación de una empresa familiar con más de 25 años cultivando y exportando frutas y verduras frescas de alta calidad desde Elche.",
       rights:"Todos los derechos reservados.",
@@ -52,7 +53,7 @@
       prodNav:[["granadas","Granadas"],["pimientos","Pimientos"],["coliflor","Coliflor"],["higos","Higos y Brevas"],["limones","Limones"]]
     },
     en: {
-      contact:"Contact", nav:["home","fruits","about","sustain","news","catalog","contact"],
+      contact:"Contact", nav:["home","fruits","about","sustain","news","gallery","contact"],
       explore:"Explore", products:"Products", contactCol:"Contact",
       brandDesc:"A second-generation family business with over 25 years growing and exporting premium fresh fruit and vegetables from Elche.",
       rights:"All rights reserved.",
