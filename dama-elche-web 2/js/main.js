@@ -86,13 +86,31 @@
   var CONSENT_KEY = "dama_cookie_consent";
   var getConsent = function () { try { return window.localStorage.getItem(CONSENT_KEY); } catch (e) { return "seen"; } };
   var setConsent = function (v) { try { window.localStorage.setItem(CONSENT_KEY, v); } catch (e) {} };
+  /* ---- Google Analytics 4: se carga SOLO con consentimiento (RGPD) ---- */
+  var gaLoaded = false;
+  var loadGA = function () {
+    if (gaLoaded || !window.GA_ID) return;
+    gaLoaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", window.GA_ID, { anonymize_ip: true });
+  };
+
   var banner = document.querySelector(".cookie-banner");
+  if (getConsent() === "accept") loadGA();
   if (banner) {
     if (!getConsent()) { banner.classList.add("show"); }
     banner.querySelectorAll("[data-cookie]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        setConsent(btn.getAttribute("data-cookie")); // "accept" | "reject"
+        var v = btn.getAttribute("data-cookie"); // "accept" | "reject"
+        setConsent(v);
         banner.classList.remove("show");
+        if (v === "accept") loadGA();
       });
     });
   }
