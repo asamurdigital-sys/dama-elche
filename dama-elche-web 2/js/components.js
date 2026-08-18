@@ -124,9 +124,6 @@
   }).join("");
   var prodLinks = T.prodNav.map(function (p) { return '<li><a href="' + hrefSame(p[0]) + '">' + p[1] + '</a></li>'; }).join("");
   var legalLinks = T.legal.map(function (l) { return '<a href="' + hrefSame(l[0]) + '">' + l[1] + '</a>'; }).join("");
-  var CDN = assets + "img/";
-  var partners = [["cert-globalgap.png","GlobalG.A.P."],["cert-ifs.png","IFS Food"],["cert-brcgs.png","BRCGS"],["cert-fruverpack.png","fruverpack"],["cert-sorma.png","Sorma Ibérica"]];
-  var partnersHTML = partners.map(function (p) { return '<img src="' + CDN + p[0] + '" alt="' + p[1] + '" loading="lazy">'; }).join("");
 
   var footer =
     '<footer class="site-footer"><div class="container">' +

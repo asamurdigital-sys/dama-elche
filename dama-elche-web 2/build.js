@@ -32,6 +32,33 @@ const IMG = {
   news2: A+"img/news2.webp",
   news3: A+"img/news3.webp"
 };
+/* ---- Cache-busting: añade ?v=<hash del archivo> a cada imagen ----
+   Evita que el navegador/CDN sirva una versión antigua cuando se
+   reemplaza una imagen manteniendo el mismo nombre de archivo. */
+const crypto = require("crypto");
+const _vcache = {};
+function vhash(file){
+  if (_vcache[file] !== undefined) return _vcache[file];
+  try {
+    const buf = fs.readFileSync(path.join(ROOT, "img", file));
+    _vcache[file] = crypto.createHash("md5").update(buf).digest("hex").slice(0, 8);
+  } catch (e) { _vcache[file] = ""; }
+  return _vcache[file];
+}
+/* añade la versión a cualquier ruta img/... que aparezca en el HTML final */
+function vfile(rel){
+  try { return crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, rel))).digest("hex").slice(0,8); }
+  catch(e){ return ""; }
+}
+function addAssetVersions(html){
+  html = html.replace(/((?:\.\.\/)?)css\/styles\.min\.css/g, (m,p)=>{const v=vfile("css/styles.min.css"); return p+"css/styles.min.css"+(v?"?v="+v:"");});
+  html = html.replace(/((?:\.\.\/)?)js\/(components|main)\.min\.js/g, (m,p,n)=>{const v=vfile("js/"+n+".min.js"); return p+"js/"+n+".min.js"+(v?"?v="+v:"");});
+  return html.replace(/((?:\.\.\/)?img\/([A-Za-z0-9._-]+\.(?:webp|png|jpe?g|svg|avif)))/g, function(m, full, file){
+    const v = vhash(file);
+    return v ? full + "?v=" + v : full;
+  });
+}
+
 /* dimensiones intrínsecas (para width/height y evitar CLS) */
 const DIMS = {"hero.webp":[1289,1221],"coliflor.webp":[1000,1000],"hd-coliflor.webp":[1600,760],"granadas.webp":[900,900],"pimientos.webp":[900,900],"coliflor.webp":[664,766],"higos.webp":[900,900],"orchard.webp":[1000,667],"grading.webp":[1000,667],"brandbox.webp":[1200,900],"facility.webp":[1400,800],"orchard2.webp":[1400,800],"hd-about.webp":[1600,780],"hd-quality.webp":[1600,760],"hd-certs.webp":[1600,760],"hd-sustain.webp":[1600,760],"hd-gallery.webp":[1600,760],"editorial.webp":[1400,800],"limones.webp":[900,900],"mapa.webp":[1800,990],"news3.webp":[1024,680],"news2.webp":[1024,680],"news1.webp":[256,256],"cert-globalgap.webp":[225,225],"cert-ifs.webp":[225,225],"cert-brcgs.webp":[225,225],"cert-fruverpack.webp":[225,225],"cert-sorma.webp":[225,225]};
 function imgAttrs(u){ var f=String(u).split("/").pop(); var d=DIMS[f]; return d ? ' width="'+d[0]+'" height="'+d[1]+'"' : ''; }
@@ -751,6 +778,6 @@ langs.forEach(lang=>{
   pages.push(galleryPage(lang));
   pages.push(contactPage(lang));
   ["privacy","terms","cookies","legal"].forEach(k=>pages.push(legalPage(k,lang)));
-  pages.forEach(pg=>{ fs.writeFileSync(outPath(pg.id,lang), shell(pg)); count++; });
+  pages.forEach(pg=>{ fs.writeFileSync(outPath(pg.id,lang), addAssetVersions(shell(pg))); count++; });
 });
 console.log("Generadas "+count+" páginas ("+langs.join("+")+").");
