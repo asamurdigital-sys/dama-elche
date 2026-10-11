@@ -1,0 +1,86 @@
+# Dominio antiguo (granadasdamadeelche.com, alias en Netlify) → grupodamadeelche.com
+#
+# - Netlify no redirige los alias por sí solo: hacen falta estas reglas.
+# - Solo https: Netlify fuerza https antes de aplicar las reglas.
+# - Gana la primera regla que coincide: primero las URLs del WordPress antiguo
+#   (sacadas de web.archive.org) hacia su página equivalente; al final, el resto
+#   conserva la ruta.
+# - Destinos con .html porque son las URLs canónicas del sitemap (un solo salto).
+
+# --- Granadas ---
+https://granadasdamadeelche.com/granadas-2/                         https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/granadas-2/                     https://grupodamadeelche.com/granadas.html          301!
+https://granadasdamadeelche.com/category/granadas/                  https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/category/granadas/              https://grupodamadeelche.com/granadas.html          301!
+https://granadasdamadeelche.com/como-pelar-granadas/                https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/como-pelar-granadas/            https://grupodamadeelche.com/granadas.html          301!
+https://granadasdamadeelche.com/zumo-de-granada/                    https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/zumo-de-granada/                https://grupodamadeelche.com/granadas.html          301!
+https://granadasdamadeelche.com/ensalada-de-endibias-con-granada/   https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/ensalada-de-endibias-con-granada/ https://grupodamadeelche.com/granadas.html        301!
+https://granadasdamadeelche.com/tarta-de-peras-y-granada/           https://grupodamadeelche.com/granadas.html          301!
+https://www.granadasdamadeelche.com/tarta-de-peras-y-granada/       https://grupodamadeelche.com/granadas.html          301!
+
+# --- Pimientos ---
+https://granadasdamadeelche.com/pimientos-2/                        https://grupodamadeelche.com/pimientos.html         301!
+https://www.granadasdamadeelche.com/pimientos-2/                    https://grupodamadeelche.com/pimientos.html         301!
+https://granadasdamadeelche.com/category/pimientos/                 https://grupodamadeelche.com/pimientos.html         301!
+https://www.granadasdamadeelche.com/category/pimientos/             https://grupodamadeelche.com/pimientos.html         301!
+https://granadasdamadeelche.com/pimiento-rellenos/                  https://grupodamadeelche.com/pimientos.html         301!
+https://www.granadasdamadeelche.com/pimiento-rellenos/              https://grupodamadeelche.com/pimientos.html         301!
+
+# --- Coliflor ---
+https://granadasdamadeelche.com/coliflor-3/                         https://grupodamadeelche.com/coliflor.html          301!
+https://www.granadasdamadeelche.com/coliflor-3/                     https://grupodamadeelche.com/coliflor.html          301!
+https://granadasdamadeelche.com/category/coliflor/                  https://grupodamadeelche.com/coliflor.html          301!
+https://www.granadasdamadeelche.com/category/coliflor/              https://grupodamadeelche.com/coliflor.html          301!
+
+# --- Higos y brevas ---
+https://granadasdamadeelche.com/brevas/                             https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://www.granadasdamadeelche.com/brevas/                         https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://granadasdamadeelche.com/category/brevas/                    https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://www.granadasdamadeelche.com/category/brevas/                https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://granadasdamadeelche.com/brevas-rellenas/                    https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://www.granadasdamadeelche.com/brevas-rellenas/                https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://granadasdamadeelche.com/tarta-de-requeson-y-brevas/         https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://www.granadasdamadeelche.com/tarta-de-requeson-y-brevas/     https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://granadasdamadeelche.com/solomillo-con-salsa-de-higos/       https://grupodamadeelche.com/higos-y-brevas.html    301!
+https://www.granadasdamadeelche.com/solomillo-con-salsa-de-higos/   https://grupodamadeelche.com/higos-y-brevas.html    301!
+
+# --- Productos sin página propia en la web nueva (romanescu, alcachofa, habas) → catálogo ---
+https://granadasdamadeelche.com/romanescu-2/                        https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/romanescu-2/                    https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/category/romanescu/                 https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/category/romanescu/             https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/romanescu-con-almendras/            https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/romanescu-con-almendras/        https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/alcachofa/                          https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/alcachofa/                      https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/category/alcachofa/                 https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/category/alcachofa/             https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/receta-de-alcachofas-salteadas-con-pure-de-puerro-y-patata-mas-info-httpwww-hogarutil-comcocinarecetasensaladas-verduras201101alcachofas-salteadas-pure-puerro-patata-3282-htmlixzz3k5nlzs2c/     https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/receta-de-alcachofas-salteadas-con-pure-de-puerro-y-patata-mas-info-httpwww-hogarutil-comcocinarecetasensaladas-verduras201101alcachofas-salteadas-pure-puerro-patata-3282-htmlixzz3k5nlzs2c/ https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/habas-2/                            https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/habas-2/                        https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/category/habas/                     https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/category/habas/                 https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://granadasdamadeelche.com/habas-con-cebolla/                  https://grupodamadeelche.com/frutas-y-verduras.html 301!
+https://www.granadasdamadeelche.com/habas-con-cebolla/              https://grupodamadeelche.com/frutas-y-verduras.html 301!
+
+# --- Empresa, contacto y legales ---
+https://granadasdamadeelche.com/empresa/                            https://grupodamadeelche.com/mision-y-valores.html  301!
+https://www.granadasdamadeelche.com/empresa/                        https://grupodamadeelche.com/mision-y-valores.html  301!
+https://granadasdamadeelche.com/contacto/                           https://grupodamadeelche.com/contacto.html          301!
+https://www.granadasdamadeelche.com/contacto/                       https://grupodamadeelche.com/contacto.html          301!
+https://granadasdamadeelche.com/politica-de-cookies/                https://grupodamadeelche.com/politica-de-cookies.html 301!
+https://www.granadasdamadeelche.com/politica-de-cookies/            https://grupodamadeelche.com/politica-de-cookies.html 301!
+https://granadasdamadeelche.com/politica-de-privacidad-y-aviso-legal/ https://grupodamadeelche.com/politica-de-privacidad.html 301!
+https://www.granadasdamadeelche.com/politica-de-privacidad-y-aviso-legal/ https://grupodamadeelche.com/politica-de-privacidad.html 301!
+
+# --- Inglés ---
+https://granadasdamadeelche.com/en                                  https://grupodamadeelche.com/en/                    301!
+https://www.granadasdamadeelche.com/en                              https://grupodamadeelche.com/en/                    301!
+
+# --- Resto: misma ruta en el dominio nuevo (la home incluida) ---
+https://granadasdamadeelche.com/*                                   https://grupodamadeelche.com/:splat                 301!
+https://www.granadasdamadeelche.com/*                               https://grupodamadeelche.com/:splat                 301!
