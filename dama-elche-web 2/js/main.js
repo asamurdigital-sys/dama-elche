@@ -97,8 +97,15 @@
     document.head.appendChild(s);
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
+    // El banner solo pide permiso para medir tráfico, no para publicidad (Consent Mode v2)
+    window.gtag("consent", "default", {
+      analytics_storage: "granted",
+      ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"
+    });
     window.gtag("js", new Date());
     window.gtag("config", window.GA_ID, { anonymize_ip: true });
+    // Página de gracias (ES y EN) = formulario de contacto enviado → evento clave en GA4
+    if (document.body.getAttribute("data-page") === "thanks") window.gtag("event", "generate_lead");
   };
 
   var banner = document.querySelector(".cookie-banner");
