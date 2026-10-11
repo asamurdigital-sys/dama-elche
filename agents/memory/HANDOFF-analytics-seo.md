@@ -24,21 +24,26 @@
      Solo carga si el visitante acepta cookies.
    - Verificado en producción: sin aceptar no hay peticiones a Google; al aceptar,
      `gcs=G101` y el informe Tiempo real recibió page_view, session_start y generate_lead.
-4. **Search Console** — propiedades de dominio creadas (sin verificar aún):
-   - `grupodamadeelche.com` → TXT `google-site-verification=ikVwfB94kwBbBX4qWtMs8ytVyWztcwg-vIQpIxnr45c`
-   - `granadasdamadeelche.com` → TXT `google-site-verification=548eORORAwb4ToARubXzzn-EED_AtGYFehZaXW_L3i8`
+4. **Search Console**
+   - `grupodamadeelche.com` (dominio): **verificada** (TXT en Netlify DNS
+     `google-site-verification=ikVwfB94kwBbBX4qWtMs8ytVyWztcwg-vIQpIxnr45c`; no quitarlo).
+     Sitemap `https://grupodamadeelche.com/sitemap.xml` enviado el 2026-10-11 (al
+     enviarlo sale "No se ha podido obtener"; el fichero responde 200, XML válido, 42 URLs).
+     **Vinculada con GA4** (flujo web grupodamadeelche.com).
+   - `granadasdamadeelche.com` (dominio): creada, **sin verificar**. Necesita en el DNS del
+     proveedor externo el TXT `google-site-verification=548eORORAwb4ToARubXzzn-EED_AtGYFehZaXW_L3i8`.
 
 ## Pendiente (en orden)
-1. Usuario: añadir el TXT de `grupodamadeelche.com` en Netlify DNS (a Claude le bloquea
-   el permiso de cambios DNS). Luego pulsar "Verificar" en Search Console.
-2. Usuario: pedir al proveedor del dominio antiguo el TXT de `granadasdamadeelche.com`
-   (en la raíz, sin tocar los registros A, CNAME ni MX). Luego "Verificar".
-3. Con las dos verificadas: Search Console → propiedad antigua → Ajustes → **Cambio de
-   dirección** a `grupodamadeelche.com`. Enviar `https://grupodamadeelche.com/sitemap.xml`.
-4. Vincular Search Console con GA4 (GA → Administrar → Vinculaciones → Search Console).
-5. **A partir del 2026-10-12**: GA → Administrar → Eventos → Eventos recientes → marcar
+1. Usuario: pedir al proveedor del dominio antiguo el TXT de `granadasdamadeelche.com`
+   (en la raíz, sin tocar los registros A, CNAME ni MX). Luego "Verificar" en Search Console.
+   Plan B si el proveedor no responde: propiedad de prefijo `https://granadasdamadeelche.com/`
+   verificada con fichero HTML servido por una excepción en `_redirects` (antes del comodín).
+2. Con la antigua verificada: Search Console → propiedad `granadasdamadeelche.com` →
+   Ajustes → **Cambio de dirección** a `grupodamadeelche.com`.
+3. Revisar en 1–2 días que el sitemap pasa a "Correcto".
+4. **A partir del 2026-10-12**: GA → Administrar → Eventos → Eventos recientes → marcar
    la estrella de `generate_lead` (evento clave). GA no deja marcarlo antes de que aparezca.
-6. Opcional: añadir al cliente como administrador de la cuenta de GA4.
+5. Opcional: añadir al cliente como administrador de la cuenta de GA4.
 
 ## Trampas aprendidas
 - Netlify solo incluye en el certificado los alias que ya apuntaban al emitirlo: tras
