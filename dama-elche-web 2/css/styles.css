@@ -559,3 +559,12 @@ select.field{cursor:pointer}
   .feature p{overflow-wrap:break-word}
   .fcol a{overflow-wrap:break-word}
 }
+
+/* ---------- Auditoría dic. 2026: sin GRASP/SPRING; GLN bajo GlobalG.A.P. ---------- */
+.cert-logos{grid-template-columns:repeat(4,1fr); max-width:880px; margin-left:auto; margin-right:auto}
+@media(max-width:1024px){.cert-logos{grid-template-columns:repeat(2,1fr)}}
+.cert-chip--gln,.cert-card-logo--gln{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px}
+.cert-chip--gln img{max-height:70px}
+.cert-card-logo--gln img{max-height:62px}
+.cert-gln{display:block; font-size:12px; line-height:1.2; letter-spacing:.02em; color:var(--ink); font-variant-numeric:tabular-nums; white-space:nowrap}
+@media(max-width:600px){.cert-chip--gln img{max-height:54px}.cert-gln{font-size:11px}}
